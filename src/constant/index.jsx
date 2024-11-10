@@ -1,11 +1,8 @@
 export const navItem = [
   { label:"Home", href: "/" },
-  { label:"Current Executive", href: "/curent" },
+  { label:"Current Executive", href: "/current" },
   { label:"Past Executives", href: "/past" },
-  { label:"Active Members", href: "/active" },
-  // { label:"Members Triumphant", href: "/triumphant" },
-  // { label:"Society Activities", href: "/society" },
-  { label:"Contact",href: "/contact" },
+  { label:"Active Members", href: "/active" }
 ];
 
 
@@ -30,7 +27,7 @@ export const namesOne = [
   "Yemi Alex Idowu",
   "Stephen Adeniran",
   "N. Kehinde",
-  "Otunba Anthony Alli",
+  "Otunba Anthony Alli"
 ];
 
 export const nameTwo = [
@@ -40,12 +37,39 @@ export const nameTwo = [
   { name: "Mr. Femi Osikoya", position: "Asst. Secretary" },
   { name: "Mr. Titus Niniola", position: "Treasurer" },
   { name: "Mr. Louis Achike", position: "Financial Secretary" },
-  { name: "Mr. Ranti Diyaolu", position: "Social Secretary" },
+  { name: "Mr. Ranti Diyaolu", position: "Social Secretary" }
 ];
 
 export const nameThree = [
   "Ranti Diyaolu",
   "Segun Ogunfolaji",
   "Peter Bankole ",
-  "Henry Lawrence",
+  "Henry Lawrence"
+];
+
+export const aims = [
+  {
+    obj: "To promote Christianity within and outside the Catholic Church.",
+    icon: <i class="fa-solid fa-cross"></i>,
+  },
+  {
+    obj: "To foster cooperation and love among the members and their families.",
+    icon: <i class="fa-regular fa-heart"></i>,
+  },
+  {
+    obj: "To organize educational and recreational activities for members and their families from time to time.",
+    icon: <i class="fa-solid fa-graduation-cap"></i>,
+  },
+  {
+    obj: "To cater for the welfare of the members.",
+    icon: <i class="fa-solid fa-user-group"></i>,
+  },
+  {
+    obj: "To take active part in all church activities",
+    icon: <i class="fa-solid fa-church"></i>,
+  },
+  {
+    obj: "To initiate and support developmental programmes in the church.",
+    icon: <i class="fa-solid fa-handshake-angle"></i>,
+  }
 ];
