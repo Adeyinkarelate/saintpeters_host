@@ -1,5 +1,6 @@
 import React from "react";
 import char from "../assets/image/charrity.jpg";
+import { nameThree, nameTwo, namesOne } from "../constant/index";
 
 const Banner = () => {
   return (
@@ -31,10 +32,48 @@ const Banner = () => {
         </button>
         <dialog id="my_modal_1" className="modal">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">
-              Press ESC key or click the button below to close
-            </p>
+            <h3 className="font-bold text-lg">Cont</h3>
+            <div class="p-4 md:p-5 space-y-4">
+              <ul className="grid grid-cols-2 md:grid-cols-3">
+                {namesOne.map((name, index) => (
+                  <li key={index} className="text-sm tracking-wider py-2">
+                    {name} <br />
+                  </li>
+                ))}
+              </ul>
+              <p class="text-sm tracking-wider text-justify leading-relaxed text-gray-600 dark:text-gray-600">
+                On the 3rd of September 1982, the first formal meeting of the
+                society was held and protem officers were elected. At the third
+                meeting of the Society held on the 17th October, 1982, the
+                following people were elected and sworn-in as the first
+                Executive Officers elected to run the affairs of the society.
+              </p>
+              <ul className="grid ">
+                {nameTwo.map((n, index) => (
+                  <li
+                    key={index}
+                    className="text-sm tracking-wider py-2 flex space-x-4"
+                  >
+                    {n.name} - {n.position}
+                  </li>
+                ))}
+              </ul>
+              <p class="text-sm tracking-wider text-justify leading-relaxed text-gray-600 dark:text-gray-600">
+                Thereafter, the following members were appointed to draft the
+                constitution of the society before its inauguration:
+              </p>
+              <ul className="grid ">
+                {nameThree.map((name, index) => (
+                  <li
+                    key={index}
+                    className="text-sm tracking-wider py-2 flex space-x-4"
+                  >
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="modal-action">
               <form method="dialog">
                 {/* if there is a button in form, it will close the modal */}
