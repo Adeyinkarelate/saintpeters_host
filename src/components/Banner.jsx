@@ -1,12 +1,13 @@
 import React from "react";
-import char from "../assets/image/charrity.jpg";
+import char from "../assets/image/b2.jpg";
 import { nameThree, nameTwo, namesOne } from "../constant/index";
 
 const Banner = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-4 pl-3  bg-white text-black">
-      <div className="p-3">
-        <h2 className=" text-3xl md:text-5xl my-6 font-semibold">
+    <div className="flex flex-col-reverse md:flex-row gap-4 md:pl-3  bg-white text-black">
+
+      <div className="p-3 md:w-2/3">
+        <h2 className=" text-3xl md:text-5xl my-6 font-semibold animate__animated animate__fadeInLeft">
           THE CHRONILES OF ST PETER’S SOCIETY,
         </h2>
         <p className="text-lg tracking-wider text-orange-600 ">
@@ -86,13 +87,13 @@ const Banner = () => {
       </div>
 
       <div>
-        <div className=" bg-black inset-0 relative"></div>
         <img
           src={char}
           alt=""
-          className="w-full md:min-h-[550px] min-h-[400px]  md:p-0 p-3"
+          className="w-screen h-full"
         />
       </div>
+
     </div>
   );
 };

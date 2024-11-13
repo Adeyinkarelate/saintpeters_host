@@ -12,7 +12,7 @@ const Objectives = () => {
           {aims.map((item, index) => (
             <div
              
-              className="bg-gray-200 w-full min-h-64 p-4 flex flex-col justify-center items-center text-center"
+              className="bg-gray-200 w-full min-h-64 p-4 flex flex-col justify-center items-center text-center animate__animated animate__fadeInLeft"
               key={index}
             >
               <div className="text-4xl text-orange-400">{item.icon}</div>
