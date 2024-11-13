@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Current from "./pages/Current";
 import Active from "./pages/Active";
 import Past from './pages/Past';
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/current" element={<Current />} />
         <Route path="/active" element={<Active />} />
         <Route path="/past" element={<Past />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

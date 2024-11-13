@@ -11,12 +11,11 @@ const Objectives = () => {
         <div className="grid md:grid-cols-3 gap-4 ">
           {aims.map((item, index) => (
             <div
-             
-              className="bg-gray-200 w-full min-h-64 p-4 flex flex-col justify-center items-center text-center animate__animated animate__fadeInLeft"
+              className="bg-gray-200 w-full min-h-64 p-4 flex flex-col justify-center items-center text-center animate__animated animate__fadeInLeft rounded-lg hover:bg-orange-500 hover:text-white"
               key={index}
             >
-              <div className="text-4xl text-orange-400">{item.icon}</div>
-              <p className="text-sm text-black p-3 tracking-wider">
+              <div className="text-5xl text-gray-400 hover:text-white">{item.icon}</div>
+              <p className="text-md p-3 tracking-wider">
                 {item.obj}
               </p>
             </div>

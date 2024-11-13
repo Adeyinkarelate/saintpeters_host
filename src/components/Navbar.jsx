@@ -30,12 +30,12 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
+          <div className="hidden lg:flex justify-center space-x-8 items-center">
             <Link to="/about" className="px-3 py-2 rounded-md border">
               Event
             </Link>
             <Link
-              to="/about"
+              to="/contact"
               className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
             >
               Contact Us
@@ -53,11 +53,11 @@ const Navbar = () => {
           </div>
 
           {mobileDrawerOpen && (
-            <div className="fixed right-0 z-20 bg-neutral-900 w-full px-12 py-8 flex flex-col justify-center items-center  top-14 text-center">
+            <div className="fixed right-0 z-20 bg-neutral-900 w-full px-12 py-8 flex flex-col justify-center items-center  top-16 text-center">
               <ul>
                 {navItem.map((item, index) => (
                   <li
-                    className="py-4 hover:text-orange-600  hover:font-bold "
+                    className="py-3 hover:text-orange-600  hover:font-bold "
                     key={index}
                   >
                     {" "}
@@ -66,13 +66,13 @@ const Navbar = () => {
                 ))}
               </ul>
 
-              <div className="flex space-x-6">
+              <div className="flex space-x-6 my-2 md:my-0">
                 <Link to="/about" className="px-3 py-2 rounded-md border">
                   Event
                 </Link>
 
                 <Link
-                  to="/about"
+                  to="/contact"
                   className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
                 >
                   Contact Us

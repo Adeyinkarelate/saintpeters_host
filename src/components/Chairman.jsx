@@ -1,79 +1,29 @@
 import React from "react";
+import ch1 from "../assets/image/ch1.jpg";
 
 const Chairman = () => {
   return (
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div class="grid gap-12 row-gap-8 lg:grid-cols-2">
-        <div class="flex flex-col justify-center">
-          <div class="max-w-xl mb-6">
-            <h2 class="max-w-lg mb-6 text-3xl font-bold tracking-wider text-gray-900 sm:text-4xl sm:leading-none">
-              Chairman Speech <br />
-              <span class="inline-block text-xl">
-              Mr John Pablo
-              </span>
-            </h2>
-            <p class="text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
-            </p>
-          </div>
-          <div class="grid gap-8 row-gap-8 sm:grid-cols-2">
-            <div>
-              <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  class="w-10 h-10 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  ></polygon>
-                </svg>
-              </div>
-              <h6 class="mb-2 font-semibold leading-5">
-                I'll be sure to note that in my log
-              </h6>
-              <p class="text-sm text-gray-900">
-                Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly got in a gaum
-                Powrtland stove up dooryahd
-              </p>
-            </div>
-            <div>
-              <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-                <svg
-                  class="w-10 h-10 text-deep-purple-accent-400"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  ></polygon>
-                </svg>
-              </div>
-              <h6 class="mb-2 font-semibold leading-5">
-                Iterative approaches to corporate strategy
-              </h6>
-              <p class="text-sm text-gray-900">
-                A slice of heaven. O for awesome, this chocka full cuzzie is as
-                rip-off as a cracker.
-              </p>
-            </div>
-          </div>
+    <div class="flex items-center justify-center min-h-screen bg-black">
+      <div class="flex flex-col md:flex-row   rounded-lg overflow-hidden shadow-lg">
+        <div class=" p-4 md:p-8 text-white flex-1">
+          <h2 class="text-3xl font-bold mb-4">Chairman Speech</h2>
+          <div class="h-1 w-12 bg-orange-600 mb-4"></div>
+          <p class="mb-6 text-sm text-justify tracking-wider leading-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            tempus vestibulum mauris quis aliquam. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Mauris tempus vestibulum mauris quis
+            aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper
+            id. Quisque at erat eu libero consequat tempus. Quisque molestie
+            convallis tempus. Ut semper purus metus, a euismod sapien sodales
+            ac. Duis viverra eleifend fermentum.
+          </p>
         </div>
-        <div>
+        {/*  */}
+        <div class="w-full md:w-1/2 h-[450px]">
           <img
-            class="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-            src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-            alt=""
+            src={ch1}
+            alt="Child with guitar"
+            class="object-cover w-full "
           />
         </div>
       </div>

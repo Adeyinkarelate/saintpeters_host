@@ -1,10 +1,11 @@
-export const navItem = [
-  { label:"Home", href: "/" },
-  { label:"Current Executive", href: "/current" },
-  { label:"Past Executives", href: "/past" },
-  { label:"Active Members", href: "/active" }
-];
+import user1 from '../assets/image/logo.jpg'
 
+export const navItem = [
+  { label: "Home", href: "/" },
+  { label: "Current Executive", href: "/current" },
+  { label: "Past Executives", href: "/past" },
+  { label: "Active Members", href: "/active" },
+];
 
 export const namesOne = [
   "Segun Ogunfolaji",
@@ -27,7 +28,7 @@ export const namesOne = [
   "Yemi Alex Idowu",
   "Stephen Adeniran",
   "N. Kehinde",
-  "Otunba Anthony Alli"
+  "Otunba Anthony Alli",
 ];
 
 export const nameTwo = [
@@ -37,14 +38,14 @@ export const nameTwo = [
   { name: "Mr. Femi Osikoya", position: "Asst. Secretary" },
   { name: "Mr. Titus Niniola", position: "Treasurer" },
   { name: "Mr. Louis Achike", position: "Financial Secretary" },
-  { name: "Mr. Ranti Diyaolu", position: "Social Secretary" }
+  { name: "Mr. Ranti Diyaolu", position: "Social Secretary" },
 ];
 
 export const nameThree = [
   "Ranti Diyaolu",
   "Segun Ogunfolaji",
   "Peter Bankole ",
-  "Henry Lawrence"
+  "Henry Lawrence",
 ];
 
 export const aims = [
@@ -71,5 +72,15 @@ export const aims = [
   {
     obj: "To initiate and support developmental programmes in the church.",
     icon: <i class="fa-solid fa-handshake-angle"></i>,
-  }
+  },
+];
+
+export const members = [
+  { name: "Mr. Femi Kalesanwo", image: user1, },
+  { name: "Mr. Phillip Opadijo", image: user1, },
+  { name: "Mr. JK Diyaolu", image: user1, },
+  { name: "Mr. FI Agu", image: user1, },
+  { name: "Mr. JT Olatunde", image: user1, },
+  { name: "Mr. Osita Anigwe", image: user1, },
+  { name: "Olootu Patrick Olusegun Ogunfolaji", image: user1, }
 ];
