@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from '../assets/image/logo.jpg'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { navItem } from '../constant/index';
 
 const Navbar = () => {
@@ -25,21 +25,21 @@ const Navbar = () => {
                 key={index}
               >
                 {" "}
-                <Link to={item.href}>{item.label}</Link>{" "}
+                <NavLink to={item.href}>{item.label}</NavLink>{" "}
               </li>
             ))}
           </ul>
 
           <div className="hidden lg:flex justify-center space-x-8 items-center">
-            <Link to="/about" className="px-3 py-2 rounded-md border">
+            <NavLink to="/about" className="px-3 py-2 rounded-md border">
               Event
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/contact"
               className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
             >
               Contact Us
-            </Link>
+            </NavLink>
           </div>
 
           <div className="flex lg:hidden flex-column justify-end">
@@ -61,22 +61,22 @@ const Navbar = () => {
                     key={index}
                   >
                     {" "}
-                    <Link to={item.href}>{item.label}</Link>{" "}
+                    <NavLink to={item.href}>{item.label}</NavLink>{" "}
                   </li>
                 ))}
               </ul>
 
               <div className="flex space-x-6 my-2 md:my-0">
-                <Link to="/about" className="px-3 py-2 rounded-md border">
+                <NavLink to="/about" className="px-3 py-2 rounded-md border">
                   Event
-                </Link>
+                </NavLink>
 
-                <Link
+                <NavLink
                   to="/contact"
                   className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
                 >
                   Contact Us
-                </Link>
+                </NavLink>
               </div>
             </div>
           )}
