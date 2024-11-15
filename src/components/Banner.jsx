@@ -1,99 +1,113 @@
 import React from "react";
-import char from "../assets/image/b2.jpg";
-import { nameThree, nameTwo, namesOne } from "../constant/index";
+import { namesOne, nameTwo, nameThree } from "../constant/index";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row gap-4 md:pl-3  bg-white text-black">
+    <div
+      class="relative h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('src/assets/image/b2.jpg')" }}
+    >
+      <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
-      <div className="p-3 md:w-2/3">
-        <h2 className=" text-3xl md:text-5xl my-6 font-semibold animate__animated animate__fadeInLeft">
-          THE CHRONILES OF ST PETER’S SOCIETY,
-        </h2>
-        <p className="text-lg tracking-wider text-orange-600 ">
-          ST. ANNE CATHOLIC CHURCH IBARA, ABEOKUTA.
-        </p>
-        <p className="text-sm tracking-wider mt-4 mb-6 text-justify leading-8">
-          In 1982, a group of vibrant and progressive youth in St. Anne Catholic
-          Church, Ibara, Abeokuta who aggressively desired spiritual flavor by
-          joining a church society were pulled together by common bond.
-          Incidentally, members of the existing societies as at that time were
-          old enough to be their fathers or at least their senior brothers. This
-          informed their historic decision to establish a distinct and unique
-          society of like minds and the initial effort culminated in the regular
-          but informal meeting of the foundation members listed care below:
-        </p>
-
-        {/* Open the modal using document.getElementById('ID').showModal() method */}
-        <button
-          className="btn bg-gradient-to-r from-orange-500 to-orange-700 font-medium text-sm px-5 py-3 text-center text-white"
-          onClick={() => document.getElementById("my_modal_1").showModal()}
-        >
-          ReadMore
-        </button>
-        <dialog id="my_modal_1" className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">Cont</h3>
-            <div class="p-4 md:p-5 space-y-4">
-              <ul className="grid grid-cols-2 md:grid-cols-3">
+      <div class="relative z-10 flex items-center justify-center h-full px-4 text-center md:text-left">
+        <div class="max-w-2xl mx-auto text-white">
+          <h1 class="text-3xl font-bold md:text-5xl bg-gradient-to-tr from-slate-50 to-slate-100 bg-clip-text text-transparent leading-tight animate__animated animate__fadeInLeft">
+            THE CHRONILES OF ST PETER’S SOCIETY,
+          </h1>
+          <p class="mt-4 text-lg md:text-xl animate__animated animate__fadeInRight">
+            In 1982, a group of vibrant and progressive youth in St. Anne
+            Catholic Church, Ibara, Abeokuta...
+          </p>
+          {/*  */}
+          <button
+            className="btn inline-block px-6 py-3 mt-6 text-sm font-semibold text-gray-900 bg-white rounded-md hover:bg-gray-100"
+            onClick={() => document.getElementById("my_modal_3").showModal()}
+          >
+            Learn More 🖋️
+          </button>
+          <dialog id="my_modal_3" className="modal">
+            <div className="modal-box">
+              <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className=" text-red-500 btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-2xl">
+                  ✕
+                </button>
+              </form>
+              <h3 className="font-bold text-lg text-black">
+                THE CHRONILES OF ST PETER’S SOCIETY,
+              </h3>
+              <p className="text-sm tracking-wider py-4 mb-6 text-justify leading-8 text-neutral-700">
+                In 1982, a group of vibrant and progressive youth in St. Anne
+                Catholic Church, Ibara, Abeokuta who aggressively desired
+                spiritual flavor by joining a church society were pulled
+                together by common bond. Incidentally, members of the existing
+                societies as at that time were old enough to be their fathers or
+                at least their senior brothers. This informed their historic
+                decision to establish a distinct and unique society of like
+                minds and the initial effort culminated in the regular but
+                informal meeting of the foundation members listed care below:
+              </p>
+              {/* the first group */}
+              <ul className="grid grid-cols-2 md:grid-cols-3 pb-4">
                 {namesOne.map((name, index) => (
-                  <li key={index} className="text-sm tracking-wider py-2">
+                  <li
+                    key={index}
+                    className="text-sm tracking-wider py-2 text-neutral-700"
+                  >
                     {name} <br />
                   </li>
                 ))}
               </ul>
-              <p class="text-sm tracking-wider text-justify leading-relaxed text-gray-600 dark:text-gray-600">
+
+              <p className="text-sm tracking-wider  mb-6 text-justify leading-8 text-neutral-700">
                 On the 3rd of September 1982, the first formal meeting of the
                 society was held and protem officers were elected. At the third
                 meeting of the Society held on the 17th October, 1982, the
                 following people were elected and sworn-in as the first
-                Executive Officers elected to run the affairs of the society.
+                Executive Officers elected to run the affairs of the society
               </p>
-              <ul className="grid ">
-                {nameTwo.map((n, index) => (
+
+              <ul className="grid">
+                {nameTwo.map((two, nameIndex) => (
                   <li
-                    key={index}
-                    className="text-sm tracking-wider py-2 flex space-x-4"
+                    key={nameIndex}
+                    className="text-sm tracking-wider py-2 text-neutral-700"
                   >
-                    {n.name} - {n.position}
+                    {two.name} -{" "}
+                    <span className="font-bold">{two.position}</span>
+                    <br />
                   </li>
                 ))}
               </ul>
-              <p class="text-sm tracking-wider text-justify leading-relaxed text-gray-600 dark:text-gray-600">
+
+              <p className="text-sm tracking-wider  mb-6 text-justify leading-8 text-neutral-700 italic">
                 Thereafter, the following members were appointed to draft the
                 constitution of the society before its inauguration:
               </p>
+
               <ul className="grid ">
-                {nameThree.map((name, index) => (
+                {nameThree.map((three, threeindex) => (
                   <li
-                    key={index}
-                    className="text-sm tracking-wider py-2 flex space-x-4"
+                    key={threeindex}
+                    className="text-sm tracking-wider py-2 flex space-x-4 text-neutral-700"
                   >
-                    {name}
+                    {three}
                   </li>
                 ))}
               </ul>
+
+              <div className="modal-action">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn border border-red-500 rounded-md shadow text-black">Close</button>
+                </form>
+              </div>
             </div>
+          </dialog>
 
-            <div className="modal-action">
-              <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
-                <button className="btn">Close</button>
-              </form>
-            </div>
-          </div>
-        </dialog>
-        {/*  */}
+          {/*  */}
+        </div>
       </div>
-
-      <div>
-        <img
-          src={char}
-          alt=""
-          className="w-screen h-full"
-        />
-      </div>
-
     </div>
   );
 };

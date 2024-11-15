@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import logo from '../assets/image/logo.jpg'
-import { NavLink } from "react-router-dom";
-import { navItem } from '../constant/index';
+import logo from "../assets/image/logo.jpg";
+import { NavLink, useNavigate } from "react-router-dom";
+import { navItem } from "../constant/index";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [mobileDrawerOpen, setMobileDrawer] = useState(false); //i.e is closed
 
   const toggleNavbar = () => {
@@ -11,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-2xl border-b border-neutral-700/80 py-3 bg-black text-white">
-      <div className="container mx-auto relative px-4 text-sm">
+    <nav className="sticky top-0 z-50 backdrop-blur-2xl shadow py-3 text-black">
+      <div className="container mx-auto relative px-4 text-sm md:px-16">
         <div className="flex justify-between items-center">
           <div className="flex flex-shrink-0 items-center">
             <img src={logo} alt="Adexbits log" className="h-10 w-10 mr-2" />
@@ -31,15 +32,12 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden lg:flex justify-center space-x-8 items-center">
-            <NavLink to="/about" className="px-3 py-2 rounded-md border">
-              Event
-            </NavLink>
-            <NavLink
-              to="/contact"
+            <button
+              onClick={() => navigate("contact")}
               className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
             >
-              Contact Us
-            </NavLink>
+              Contact
+            </button>
           </div>
 
           <div className="flex lg:hidden flex-column justify-end">
@@ -53,7 +51,7 @@ const Navbar = () => {
           </div>
 
           {mobileDrawerOpen && (
-            <div className="fixed right-0 z-20 bg-neutral-900 w-full px-12 py-8 flex flex-col justify-center items-center  top-16 text-center">
+            <div className="fixed right-0 z-20 bg-neutral-900 text-white w-full px-12 py-8 flex flex-col justify-center items-center  top-16 text-center">
               <ul>
                 {navItem.map((item, index) => (
                   <li
@@ -67,16 +65,12 @@ const Navbar = () => {
               </ul>
 
               <div className="flex space-x-6 my-2 md:my-0">
-                <NavLink to="/about" className="px-3 py-2 rounded-md border">
-                  Event
-                </NavLink>
-
-                <NavLink
-                  to="/contact"
+                <button
+                  onClick={() => navigate("contact")}
                   className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
                 >
-                  Contact Us
-                </NavLink>
+                  Contact
+                </button>
               </div>
             </div>
           )}
