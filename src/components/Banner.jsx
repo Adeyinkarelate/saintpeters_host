@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div
       class="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('src/assets/b2.jpg')" }}
+      style={{ backgroundImage: "url('/b2.jpg')" }}
     >
       <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
@@ -23,7 +23,7 @@ const Banner = () => {
             className="btn inline-block px-6 py-3 mt-6 text-sm font-semibold text-gray-900 bg-white rounded-md hover:bg-gray-100"
             onClick={() => document.getElementById("my_modal_3").showModal()}
           >
-            Learn More 🖋️
+            Learn More 
           </button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
