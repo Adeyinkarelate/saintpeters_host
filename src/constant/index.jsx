@@ -1,4 +1,4 @@
-import user1 from '../assets/image/logo.jpg'
+import user1 from '../assets/image/mm.jpg'
 
 export const navItem = [
   { label: "Home", href: "/" },
@@ -75,12 +75,23 @@ export const aims = [
   },
 ];
 
+// export const members = [
+//   { name: "Mr. Femi Kalesanwo", image: user1, },
+//   { name: "Mr. Phillip Opadijo", image: user1, },
+//   { name: "Mr. JK Diyaolu", image: user1, },
+//   { name: "Mr. FI Agu", image: user1, },
+//   { name: "Mr. JT Olatunde", image: user1, },
+//   { name: "Mr. Osita Anigwe", image: user1, },
+//   { name: "Olootu Patrick Olusegun Ogunfolaji", image: user1, }
+// ];
+
+
 export const members = [
-  { name: "Mr. Femi Kalesanwo", image: user1, },
-  { name: "Mr. Phillip Opadijo", image: user1, },
-  { name: "Mr. JK Diyaolu", image: user1, },
-  { name: "Mr. FI Agu", image: user1, },
-  { name: "Mr. JT Olatunde", image: user1, },
-  { name: "Mr. Osita Anigwe", image: user1, },
-  { name: "Olootu Patrick Olusegun Ogunfolaji", image: user1, }
+  ["Mr. Femi Kalesanwo"],
+  ["Mr. Phillip Opadijo"],
+  ["Mr. JK Diyaolu"],
+  ["Mr. FI Agu"],
+  ["Mr. JT Olatunde"],
+  ["Mr. Osita Anigwe"],
+  ["Olootu Patrick Olusegun Ogunfolaji"]
 ];
