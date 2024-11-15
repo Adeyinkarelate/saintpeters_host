@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div
       class="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('src/assets/image/b2.jpg')" }}
+      style={{ backgroundImage: "url('src/assets/b2.jpg')" }}
     >
       <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
