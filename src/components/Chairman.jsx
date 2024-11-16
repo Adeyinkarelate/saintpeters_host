@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Chairman = () => {
   return (
-    <div className="bg-white my-20">
+    <div className="bg-white my-20 overflow-x-hidden">
       <section className="py-16 px-4 lg:px-16 flex flex-col-reverse lg:flex-row items-center lg:items-center">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <img

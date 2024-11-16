@@ -25,7 +25,7 @@ const socialIconsChildren = {
 
 const Objectives = () => {
   return (
-    <div className="bg-gray-100 md:p-10">
+    <div className="bg-gray-100 md:p-10 overflow-x-hidden">
       <motion.h1
         initial={{
           opacity: 0,
@@ -52,7 +52,7 @@ const Objectives = () => {
               className="bg-gray-200 shadow-md w-full min-h-64 p-4 flex flex-col justify-center items-center text-center rounded-lg hover:bg-orange-500 hover:text-white"
               key={index}
             >
-              <div className="text-5xl text-gray-600 hover:text-white">
+              <div className="text-5xl text-gray-300 hover:text-white">
                 {item.icon}
               </div>
               <p className="text-md p-3 mt-2 tracking-wider">{item.obj}</p>

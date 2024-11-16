@@ -24,7 +24,7 @@ const socialIconsChildren = {
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-4 lg:px-16 bg-gray-900 text-white">
+    <footer className="py-12 px-4 lg:px-16 bg-gray-900 text-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
         <div>
           <h2 className="text-2xl font-semibold">Get in Touch</h2>
@@ -97,7 +97,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="flex space-x-8">
+        <div className="flex flex-col md:flex-row space-x-8 gap-4 items-center justify-center">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <div className="flex items-center space-x-4">
               <svg
