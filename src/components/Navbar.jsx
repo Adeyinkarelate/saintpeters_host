@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-2xl shadow py-3 text-black">
+    <nav className="sticky top-0 z-50 backdrop-blur-2xl bg-white/70 shadow py-3 text-black">
       <div className="container mx-auto relative px-4 text-sm md:px-16">
         <div className="flex justify-between items-center">
           <div className="flex flex-shrink-0 items-center">
@@ -22,7 +22,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItem.map((item, index) => (
               <li
-                className="py-2 hover:border-orange-600 hover:border-b-4"
+                className="py-2 font-medium underline decoration-transparent hover:decoration-orange-600 decoration-[3px] underline-offset-8 transition"
                 key={index}
               >
                 {" "}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="hidden lg:flex justify-center space-x-8 items-center">
             <button
               onClick={() => navigate("contact")}
-              className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
+              className="bg-gradient-to-r text-white font-medium from-orange-500 to-orange-800 px-3 py-2 rounded-md"
             >
               Contact
             </button>

@@ -1,30 +1,65 @@
 import React from "react";
 import { namesOne, nameTwo, nameThree } from "../constant/index";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
     <div
-      class="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/b2.jpg')" }}
     >
-      <div class="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
 
-      <div class="relative z-10 flex items-center justify-center h-full px-4 text-center md:text-left">
-        <div class="max-w-2xl mx-auto text-white">
-          <h1 class="text-3xl font-bold md:text-5xl bg-gradient-to-tr from-slate-50 to-slate-100 bg-clip-text text-transparent leading-tight animate__animated animate__fadeInLeft">
+      <div className="relative z-10 flex items-center justify-center h-full px-4 text-center md:text-left">
+        <div className="max-w-2xl mx-auto text-white">
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.5, delay: 0.4 },
+            }}
+            whileInView="animate"
+            className="text-3xl font-bold md:text-5xl bg-gradient-to-tr from-slate-50 to-slate-100 bg-clip-text text-transparent leading-tight"
+          >
             THE CHRONILES OF ST PETER’S SOCIETY,
-          </h1>
-          <p class="mt-4 text-lg md:text-xl animate__animated animate__fadeInRight">
+          </motion.h1>
+          <motion.p
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.5, delay: 0.8 },
+            }}
+            whileInView="animate"
+            className="mt-4 text-lg md:text-xl"
+          >
             In 1982, a group of vibrant and progressive youth in St. Anne
             Catholic Church, Ibara, Abeokuta...
-          </p>
+          </motion.p>
           {/*  */}
-          <button
+          <motion.button
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+              transition: { duration: 0.5, delay: 1.0 },
+            }}
+            whileInView="animate"
             className="btn inline-block px-6 py-3 mt-6 text-sm font-semibold text-gray-900 bg-white rounded-md hover:bg-gray-100"
             onClick={() => document.getElementById("my_modal_3").showModal()}
           >
-            Learn More 
-          </button>
+            Learn More
+          </motion.button>
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
               <form method="dialog">
@@ -99,7 +134,9 @@ const Banner = () => {
               <div className="modal-action">
                 <form method="dialog">
                   {/* if there is a button in form, it will close the modal */}
-                  <button className="btn border border-red-500 rounded-md shadow text-black">Close</button>
+                  <button className="btn border border-red-500 rounded-md shadow text-black">
+                    Close
+                  </button>
                 </form>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import user1 from '../assets/image/mm.jpg'
+import user1 from "../assets/image/mm.jpg";
 
 export const navItem = [
   { label: "Home", href: "/" },
@@ -51,27 +51,27 @@ export const nameThree = [
 export const aims = [
   {
     obj: "To promote Christianity within and outside the Catholic Church.",
-    icon: <i class="fa-solid fa-cross"></i>,
+    icon: <i className="fa-solid fa-cross"></i>,
   },
   {
     obj: "To foster cooperation and love among the members and their families.",
-    icon: <i class="fa-regular fa-heart"></i>,
+    icon: <i className="fa-regular fa-heart"></i>,
   },
   {
     obj: "To organize educational and recreational activities for members and their families from time to time.",
-    icon: <i class="fa-solid fa-graduation-cap"></i>,
+    icon: <i className="fa-solid fa-graduation-cap"></i>,
   },
   {
     obj: "To cater for the welfare of the members.",
-    icon: <i class="fa-solid fa-user-group"></i>,
+    icon: <i className="fa-solid fa-user-group"></i>,
   },
   {
     obj: "To take active part in all church activities",
-    icon: <i class="fa-solid fa-church"></i>,
+    icon: <i className="fa-solid fa-church"></i>,
   },
   {
     obj: "To initiate and support developmental programmes in the church.",
-    icon: <i class="fa-solid fa-handshake-angle"></i>,
+    icon: <i className="fa-solid fa-handshake-angle"></i>,
   },
 ];
 
@@ -85,7 +85,6 @@ export const aims = [
 //   { name: "Olootu Patrick Olusegun Ogunfolaji", image: user1, }
 // ];
 
-
 export const members = [
   ["Mr. Femi Kalesanwo"],
   ["Mr. Phillip Opadijo"],
@@ -93,5 +92,5 @@ export const members = [
   ["Mr. FI Agu"],
   ["Mr. JT Olatunde"],
   ["Mr. Osita Anigwe"],
-  ["Olootu Patrick Olusegun Ogunfolaji"]
+  ["Olootu Patrick Olusegun Ogunfolaji"],
 ];
