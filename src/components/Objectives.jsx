@@ -25,7 +25,7 @@ const socialIconsChildren = {
 
 const Objectives = () => {
   return (
-    <div className="bg-gray-100 md:p-10">
+    <div className="bg-gray-100 md:p-10 overflow-x-hidden">
       <motion.h1
         initial={{
           opacity: 0,

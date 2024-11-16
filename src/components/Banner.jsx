@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Banner = () => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center overflow-x-hidden"
       style={{ backgroundImage: "url('/b2.jpg')" }}
     >
       <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
