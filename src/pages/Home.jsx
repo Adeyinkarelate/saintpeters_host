@@ -6,12 +6,12 @@ import Triumphant from "../components/Triumphant";
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Banner />
       <Chairman />
       <Objectives />
       <Triumphant/>
-    </>
+    </div>
   );
 };
 
