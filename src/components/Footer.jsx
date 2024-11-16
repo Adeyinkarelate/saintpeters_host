@@ -97,7 +97,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="flex space-x-8">
+        <div className="flex flex-col md:flex-row space-x-8 gap-4 items-center justify-center">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <div className="flex items-center space-x-4">
               <svg
