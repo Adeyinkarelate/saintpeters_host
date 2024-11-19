@@ -8,7 +8,7 @@ const Triumphant = () => {
         <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-orange-700 uppercase rounded-full bg-teal-accent-400">
           MEMBERS TRIUMPHANT
         </p>
-        <p className="text-base text-gray-700 md:text-lg">
+        <p className="text-base text-gray-700 md:text-lg text-center">
         Members Triumphant were members that have died while belonging to the society. While alive, these members did a lot to project the image of the society. May our good Lord Grant them eternal rest. Amen
         </p>
       </div>

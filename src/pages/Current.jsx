@@ -1,134 +1,81 @@
 import React from "react";
 import Hero from "../components/Hero";
+import { motion } from "framer-motion";
 
 const Current = () => {
-  const name = "Current Members";
+  const name = "Current Executives";
+
+  const socialIconsVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.7,
+        duration: 0.3,
+        delayChildren: 0.4,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+ 
   return (
     <div>
       <Hero title={name} />
 
       {/*  */}
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+      <motion.div
+        variants={socialIconsVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="container mx-auto md:px-12 my-10 px-3"
+      >
+        <div className="grid md:grid-cols-3 gap-4 md:px-4 ">
+          <div class="relative h-[450px] rounded-lg overflow-hidden">
             <img
-              src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-              className="object-cover w-full h-64"
-              alt=""
+              src="https://img.freepik.com/free-photo/ai-nuclear-energy-future-innovation-disruptive-technology_53876-129784.jpg?t=st=1732030129~exp=1732033729~hmac=b309b946d517536981a2a8c35ecba05d86d65d233534687757bf57b8db863d38&w=360"
+              alt="Background"
+              class="w-full h-full object-cover"
             />
-            <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                <a
-                  href="/"
-                  className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                  aria-label="Category"
-                  title="traveling"
-                >
-                  traveling
-                </a>
-                <span className="text-gray-600">— 28 Dec 2020</span>
-              </p>
-              <a
-                href="/"
-                aria-label="Category"
-                title="Visit the East"
-                className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+
+            <div class="absolute bottom-2 left-2 flex flex-row justify-between items-center space-x-4 bg-black opacity-70 p-5 w-full">
+              <div>
+                <h2 className="text-white font-bold">MR ADAMAWARA JOSEPH</h2>
+                <p className="text-white ">Vice President</p>
+              </div>
+              {/*  */}
+              <button
+                className="btn bg-[#f77f00]"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
               >
-                Visit the East
-              </a>
-              <p className="mb-2 text-gray-700">
-                Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                consequuntur magni voluptatem doloremque.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-64"
-              alt=""
-            />
-            <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                <a
-                  href="/"
-                  className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                  aria-label="Category"
-                  title="traveling"
-                >
-                  traveling
-                </a>
-                <span className="text-gray-600">— 28 Dec 2020</span>
-              </p>
-              <a
-                href="/"
-                aria-label="Category"
-                title="Simple is better"
-                className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-              >
-                Simple is better
-              </a>
-              <p className="mb-2 text-gray-700">
-                Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                consequuntur magni voluptatem doloremque.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-            <img
-              src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              className="object-cover w-full h-64"
-              alt=""
-            />
-            <div className="p-5 border border-t-0">
-              <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                <a
-                  href="/"
-                  className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
-                  aria-label="Category"
-                  title="traveling"
-                >
-                  traveling
-                </a>
-                <span className="text-gray-600">— 28 Dec 2020</span>
-              </p>
-              <a
-                href="/"
-                aria-label="Category"
-                title="Film It!"
-                className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-              >
-                Film It!
-              </a>
-              <p className="mb-2 text-gray-700">
-                Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                consequuntur magni voluptatem doloremque.
-              </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </a>
+                Read More
+              </button>
+              <dialog id="my_modal_3" className="modal">
+                <div className="modal-box">
+                  <form method="dialog">
+                    {/* if there is a button in form, it will close the modal */}
+                    <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                      ✕
+                    </button>
+                  </form>
+                  <h3 className="font-bold text-lg">MR & MRS. ADAMAWARA JOSEPH</h3>
+                  <div className="p-4 flex flex-row gap-3">
+                    <div>
+                      <img  class="w-full h-full object-cover" src="https://img.freepik.com/free-photo/ai-nuclear-energy-future-innovation-disruptive-technology_53876-129784.jpg?t=st=1732030129~exp=1732033729~hmac=b309b946d517536981a2a8c35ecba05d86d65d233534687757bf57b8db863d38&w=360" alt="" />
+                    </div>
+                    {/*  */}
+
+                  </div>
+                </div>
+              </dialog>
+              {/*  */}
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
