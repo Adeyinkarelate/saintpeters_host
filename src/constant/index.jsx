@@ -10,7 +10,11 @@ import user9 from '../assets/image/Mr. and Mrs. Ogundipe.jpg'
 import user10 from '../assets/image/Mr. and Mrs Fagbenro.jpg'
 import user11 from '../assets/image/Mr. & Mrs. Oyibo.jpg'
 import user0 from '../assets/image/Mr. Taiwo Ogunfolaji.jpg'
-import user12 from '../assets/image/Arctech and Mrs. Oluyide.jpg'
+import user12 from '../assets/image/Arctech and Mrs. Oluyide.jpg';
+
+import cor1 from '../assets/image/Mr. George Diyaolu.jpg'
+import cor2 from '../assets/image/Mr. Dennis Oni.jpg'
+import cor3 from '../assets/image/Mr. Francis Irepita.jpg'
 
 export const navItem = [
   { label: "Home", href: "/" },
@@ -122,4 +126,28 @@ export const assets = [
   {name:"Mr. and Mrs Fagbenro",image:user10},
   {name:"Mr. & Mrs. Oyibo",image:user11},
   {name:"Arctech and Mrs. Oluyide",image:user12}
+]
+
+export const current_exco = [
+  {
+    name:"Mr.George Diyaolu",
+    image:cor1,
+    position :"President"
+  },
+  {
+    name:"Mr. Taiwo Ogunfolaji",
+    image:user0,
+    position :"Vice President"
+  },
+  {
+    name:"Mr. Dennis Oni",
+    image:cor2,
+    position :"Active Member"
+  },
+  {
+    name:"Mr. Francis Irepita",
+    image:cor3,
+    position :"Active Member"
+  },
+ 
 ]

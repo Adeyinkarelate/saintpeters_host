@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-2xl bg-orange-100 shadow py-3 text-black">
+    <nav className="sticky top-0 z-50 backdrop-blur-2xl bg-late-100 py-3 text-black ">
       <div className="container mx-auto relative px-4 text-sm md:px-16">
         <div className="flex justify-between items-center">
           <div className="flex flex-shrink-0 items-center">

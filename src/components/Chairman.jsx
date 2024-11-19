@@ -1,5 +1,5 @@
 import React from "react";
-import chair from "../assets/image/ch1.jpg";
+import chair from "../assets/image/Mr._George_Diyaolu.png";
 import { motion } from "framer-motion";
 
 const Chairman = () => {
@@ -10,7 +10,7 @@ const Chairman = () => {
           <img
             src={chair}
             alt="Hand holding a book"
-            className="rounded-lg shadow-lg object-cover w-[30rem] mx-auto"
+            className="rounded-lg shadow-lg object-cover w-[30rem] mx-auto "
           />
         </div>
 
@@ -25,7 +25,7 @@ const Chairman = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-sm font-semibold text-gray-500 uppercase tracking-wide"
           >
-            Mr. George Opara
+            Mr. George Diyaolu
           </motion.h3>
           <motion.h2
             initial={{
