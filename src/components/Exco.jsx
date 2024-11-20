@@ -1,47 +1,16 @@
-import React, { useState } from "react";
-import Hero from "../components/Hero";
 import { motion } from "framer-motion";
-import { current_exco } from "../constant/index";
-import Exco from "../components/Exco";
+import { eleniyan } from "../constant";
+import bg3 from '../assets/image/bg3.jpg';
 
-const Current = () => {
-  const name = "Active Members";
-
-  const [selectedIndividual, setSelectedIndividual] = useState(null);
-
-  const handleReadMore = (individual) => {
-    setSelectedIndividual(individual);
-  };
-
-  const closeModal = () => {
-    setSelectedIndividual(null);
-  };
-
-  const socialIconsVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.7,
-        duration: 0.3,
-        delayChildren: 0.4,
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
+const Exco = ({
+  selectedIndividual,
+  setSelectedIndividual,
+  handleReadMore,
+  closeModal,
+  socialIconsVariants,
+}) => {
   return (
-    <div>
-      <Hero title={name} />
-
-      <Exco
-        closeModal={closeModal}
-        selectedIndividual={selectedIndividual}
-        setSelectedIndividual={setSelectedIndividual}
-        handleReadMore={handleReadMore}
-        socialIconsVariants={socialIconsVariants}
-      />
-
+    <>
       <motion.div
         variants={socialIconsVariants}
         initial="hidden"
@@ -50,7 +19,7 @@ const Current = () => {
         className="container mx-auto md:px-12 my-10 px-3"
       >
         <div className="grid md:grid-cols-3 gap-4 md:px-4">
-          {current_exco.map((individual, index) => (
+          {eleniyan.map((individual, index) => (
             <div
               className="relative h-[450px] rounded-lg overflow-hidden"
               key={index}
@@ -110,8 +79,12 @@ const Current = () => {
           </div>
         </dialog>
       )}
-    </div>
+
+      
+        <img src={bg3} alt=""  className="bg-cover w-full my-10 h-fit rounded-md shadow-md"/>
+      
+    </>
   );
 };
 
-export default Current;
+export default Exco;
