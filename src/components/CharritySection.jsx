@@ -63,11 +63,11 @@ const CharritySection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.2 }}
             className="btn my-4 bg-[#ff7433] text-white"
-            onClick={() => document.getElementById("my_modal_46").showModal()}
+            onClick={() => document.getElementById("my_modal_466").showModal()}
           >
             Read More
           </motion.button>
-          <dialog id="my_modal_46" className="modal">
+          <dialog id="my_modal_466" className="modal">
             <div className="modal-box">
               <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-red-600 text-3xl">
