@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const Chairman = () => {
   return (
-    <div className="bg-orange-50  overflow-x-hidden">
-      <section className="py-16 px-4 lg:px-16 flex flex-col-reverse lg:flex-row items-center lg:items-center">
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+    <section className="bg-orange-50  overflow-x-hidden px-3 md:px-12  py-16">
+      <section className=" lg:px-16 flex flex-col-reverse lg:flex-row items-center lg:items-center  px-3 md:px-12  py-16">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 my-4 md:my-0">
           <img
             src={chair}
             alt="Hand holding a book"
-            className="rounded-tl-badge rounded-br-badge shadow-lg object-cover w-[30rem] mx-auto "
+            className="rounded-tl-badge rounded-br-badge shadow-lg object-cover w-[30rem] mx-auto  "
           />
         </div>
 
@@ -89,7 +89,7 @@ const Chairman = () => {
           {/*  */}
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div
+    <section
       className="relative h-screen bg-cover bg-center overflow-x-hidden"
       style={{ backgroundImage: "url('/b2.jpg')" }}
     >
@@ -145,7 +145,7 @@ const Banner = () => {
           {/*  */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

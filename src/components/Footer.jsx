@@ -24,7 +24,7 @@ const socialIconsChildren = {
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-4 lg:px-16 bg-gray-900 text-white overflow-x-hidden">
+    <footer className="py-12 px-4 lg:px-16 bg-green-950 text-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between space-y-8 lg:space-y-0">
         <div>
           <h2 className="text-2xl font-semibold">Get in Touch</h2>
