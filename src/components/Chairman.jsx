@@ -37,7 +37,7 @@ const Chairman = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="mt-4 text-3xl font-bold text-gray-900 leading-tight"
           >
-            Chairman Speech
+            President Speech
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, x: -50 }}
