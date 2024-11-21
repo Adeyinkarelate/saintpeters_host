@@ -6,7 +6,7 @@ import b2 from "../assets/image/b2.jpg"
 
 const CharritySection = () => {
   return (
-    <section className="bg-orange-50  py-20 px-6 md:px-16 min-h-[650px]">
+    <section className="bg-orange-50  py-20 px-6 md:px-16 min-h-[600px]">
       <div className="max-w-12xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left Side */}
         <div className="space-y-6">
@@ -97,11 +97,11 @@ const CharritySection = () => {
             class="relative w-full h-auto"
             data-carousel="slide"
           >
-            <div class="relative h-96 overflow-hidden rounded-lg md:h-[650px]">
+            <div class="relative h-96 overflow-hidden rounded-lg md:h-[600px]">
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img
                   src={b2}
-                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-80 md:min-h-[650px] object-cover"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-80 md:min-h-[600px] object-cover"
                   alt="..."
                 />
               </div>
@@ -109,7 +109,7 @@ const CharritySection = () => {
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img
                   src={bg1}
-                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-80 md:min-h-[650px] object-cover"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-80 md:min-h-[600px] object-cover"
                   alt="..."
                 />
               </div>
