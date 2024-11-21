@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import chair from "../assets/image/diyaolu.png";
 import bg3 from "../assets/image/bg3.jpg";
 import bg1 from "../assets/image/b1.jpg"
 import b2 from "../assets/image/b2.jpg"
