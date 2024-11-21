@@ -1,16 +1,16 @@
 import React from "react";
-import chair from "../assets/image/Mr._George_Diyaolu.png";
+import chair from "../assets/image/diyaolu.png";
 import { motion } from "framer-motion";
 
 const Chairman = () => {
   return (
-    <div className="bg-white my-20 overflow-x-hidden">
+    <div className="bg-orange-50  overflow-x-hidden">
       <section className="py-16 px-4 lg:px-16 flex flex-col-reverse lg:flex-row items-center lg:items-center">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <img
             src={chair}
             alt="Hand holding a book"
-            className="rounded-lg shadow-lg object-cover w-[30rem] mx-auto "
+            className="rounded-tl-badge rounded-br-badge shadow-lg object-cover w-[30rem] mx-auto "
           />
         </div>
 
@@ -23,7 +23,7 @@ const Chairman = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-sm font-semibold text-gray-500 uppercase tracking-wide"
+            className="text-sm font-semibold text-green-500 uppercase tracking-wide"
           >
             Mr. George Diyaolu
           </motion.h3>
@@ -60,7 +60,7 @@ const Chairman = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.2 }}
-            className="btn my-4"
+            className="btn my-4 bg-[#ff7433] text-white"
             onClick={() => document.getElementById("my_modal_4").showModal()}
           >
             Read More

@@ -81,6 +81,22 @@ export const aims = [
     obj: "To organize educational and recreational activities for members and their families from time to time.",
     icon: <i className="fa-solid fa-graduation-cap"></i>,
   },
+
+];
+
+export const clubs = [
+  {
+    obj: "To promote Christianity within and outside the Catholic Church.",
+    icon: <i className="fa-solid fa-cross"></i>,
+  },
+  {
+    obj: "To foster cooperation and love among the members and their families.",
+    icon: <i className="fa-regular fa-heart"></i>,
+  },
+  {
+    obj: "To organize educational and recreational activities for members and their families from time to time.",
+    icon: <i className="fa-solid fa-graduation-cap"></i>,
+  },
   {
     obj: "To cater for the welfare of the members.",
     icon: <i className="fa-solid fa-user-group"></i>,

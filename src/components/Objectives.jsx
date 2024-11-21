@@ -1,6 +1,7 @@
 import React from "react";
-import { aims } from "../constant/index";
+import { aims ,clubs } from "../constant/index";
 import { motion } from "framer-motion";
+
 
 const socialIconsVariants = {
   hidden: { opacity: 0 },
@@ -25,7 +26,7 @@ const socialIconsChildren = {
 
 const Objectives = () => {
   return (
-    <div className="bg-gray-100 md:p-10 overflow-x-hidden">
+    <div className="bg-green-950 md:p-14 overflow-x-hidden text-white">
       <motion.h1
         initial={{
           opacity: 0,
@@ -34,7 +35,7 @@ const Objectives = () => {
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className=" font-bold text-center md:my-4 md:text-4xl my-6 p-6 md:p-0 text-3xl"
+        className="  text-center md:my-4 md:text-4xl my-6 p-6 md:p-0 text-3xl"
       >
         AIM & OBJECTIVES
       </motion.h1>
@@ -52,13 +53,46 @@ const Objectives = () => {
               className="bg-gray-200 shadow-md w-full min-h-64 p-4 flex flex-col justify-center items-center text-center rounded-lg hover:bg-orange-500 hover:text-white"
               key={index}
             >
-              <div className="text-5xl text-gray-300 hover:text-white">
+              <div className="text-5xl text-green-900 hover:text-white">
                 {item.icon}
               </div>
-              <p className="text-md p-3 mt-2 tracking-wider">{item.obj}</p>
+              <p className="text-md p-3 mt-2 tracking-wider text-green-900">{item.obj}</p>
+
             </motion.div>
           ))}
         </motion.div>
+         {/* You can open the modal using document.getElementById('ID').showModal() method */}
+         <motion.button
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            className="btn my-4 bg-[#ff7433] text-white"
+            onClick={() => document.getElementById("my_modal_44").showModal()}
+          >
+            Read More
+          </motion.button>
+          <dialog id="my_modal_44" className="modal">
+            <div className="modal-box">
+              <form method="dialog">
+                {/* if there is a button in form, it will close the modal */}
+                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-red-700 text-2xl">
+                  ✕
+                </button>
+              </form>
+              <h3 className="font-bold text-lg text-green-950">AIM & OBJECTIVES</h3>
+              <ul className="py-4">
+                 {clubs.map((c,index)=>(
+                  <li key={index} className="py-3 my-3 text-sm tracking-wider text-green-950">{c.obj}</li>
+                 ))}
+              </ul>
+            </div>
+          </dialog>
+
+          {/*  */}
       </div>
     </div>
   );

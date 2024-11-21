@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { eleniyan } from "../constant";
-import bg3 from '../assets/image/bg3.jpg';
+import bg3 from "../assets/image/bg3.jpg";
 
 const Exco = ({
   selectedIndividual,
@@ -80,9 +80,13 @@ const Exco = ({
         </dialog>
       )}
 
-      
-        <img src={bg3} alt=""  className="bg-cover w-full my-10 h-fit rounded-md shadow-md"/>
-      
+      <div className="py-2 md:py-10 ">
+        <img
+          src={bg3}
+          alt=""
+          className="bg-cover w-full my-10  h-fit rounded-md shadow-md "
+        />
+      </div>
     </>
   );
 };
