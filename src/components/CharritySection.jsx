@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bg3 from "../assets/image/bg3.jpg";
-import bg1 from "../assets/image/b1.jpg"
-import b2 from "../assets/image/b2.jpg"
+import bg3 from "/bg3.jpg";
+import bg1 from "/b1.jpg"
+import b2 from "/b2.jpg"
 
 const CharritySection = () => {
   return (
