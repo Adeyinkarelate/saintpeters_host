@@ -20,12 +20,16 @@ import wf4 from "../assets/image/oparareal.png";
 import wf5 from "../assets/image/adeboyega2.png";
 import wf6 from "../assets/image/onabule2.png";
 
+import pst1 from "../assets/image/ti.png";
+import pst2 from "../assets/image/Peter Kayode.png";
+import pst3 from "../assets/image/Thomas.png";
+import pst4 from "../assets/image/stanley.png";
+
 export const navItem = [
   { label: "Home", href: "/" },
   { label: "Active Members", href: "/current" },
   { label: "Past Executives", href: "/past" },
   { label: "Member Triumphant", href: "/triumphant" },
-  
 ];
 
 export const namesOne = [
@@ -82,7 +86,6 @@ export const aims = [
     obj: "To organize educational and recreational activities for members and their families from time to time.",
     icon: <i className="fa-solid fa-graduation-cap"></i>,
   },
-
 ];
 
 export const clubs = [
@@ -226,5 +229,24 @@ export const eleniyan = [
     position: "Secretary",
     wife: user5,
     name2: "Mr. Segun Adeniyi",
+  },
+];
+
+export const past_member = [
+  { name: "Mr. Peter Kayode Adigun", position: "President", image: pst2 },
+  {
+    name: "Mr. Thomas Aregbesola",
+    position: "Accountant General and Permanent Secretary",
+    image: pst3,
+  },
+  {
+    name: "Mr. Timothy Olatunji",
+    position: "Permanent Secretary",
+    image: pst1,
+  },
+  {
+    name: "Dr. Stanley Aikulola",
+    position: "Permanent Secretary",
+    image: pst4,
   },
 ];
