@@ -8,6 +8,7 @@ import user11 from "../assets/image/oyinbo.png";
 import user0 from "../assets/image/Mr. Taiwo Ogunfolaji.jpg";
 import user12 from "../assets/image/arch1.png";
 import user13 from "../assets/image/onabule1.png";
+import user14 from "../assets/image/roland.png";
 
 import cor1 from "../assets/image/Mr._George_Diyaolu.png";
 import cor2 from "../assets/image/Mr. Dennis Oni.jpg";
@@ -205,6 +206,13 @@ export const current_exco = [
     position: "Active Member",
     wife: user10,
     name2: "Mr. and Mrs Fagbenro",
+  },
+  {
+    name: "Mr. Roland Isek",
+    image: user14,
+    position: "Active Member",
+    wife: user14,
+    name2: "Mr. Roland Isek",
   },
 ];
 
