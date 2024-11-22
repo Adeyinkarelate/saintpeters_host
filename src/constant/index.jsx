@@ -24,6 +24,7 @@ export const navItem = [
   { label: "Home", href: "/" },
   { label: "Active Members", href: "/current" },
   { label: "Past Executives", href: "/past" },
+  { label: "Member Triumphant", href: "/triumphant" },
   
 ];
 

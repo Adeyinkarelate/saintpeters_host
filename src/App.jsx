@@ -12,6 +12,8 @@ import Current from "./pages/Current";
 import Past from "./pages/Past";
 import Contact from "./pages/Contact";
 import RoutLayout from "./Layout/RoutLayout";
+import Triumphant from './components/Triumphant';
+import CharritySection from "./components/CharritySection";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/current" element={<Current />} />
         <Route path="/past" element={<Past />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/event" element={<CharritySection />} />
+        <Route path="/triumphant" element={<Triumphant/>} />
       </Route>
     )
   );

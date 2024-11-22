@@ -38,6 +38,12 @@ const Navbar = () => {
             >
               Contact
             </button>
+            <button
+              onClick={() => navigate("event")}
+              className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
+            >
+              Event
+            </button>
           </div>
 
           <div className="flex lg:hidden flex-column justify-end">
@@ -70,6 +76,12 @@ const Navbar = () => {
                   className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
                 >
                   Contact
+                </button>
+                <button
+                  onClick={() => navigate("event")}
+                  className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
+                >
+                  Event
                 </button>
               </div>
             </div>

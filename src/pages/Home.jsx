@@ -4,7 +4,7 @@ import Chairman from "../components/Chairman";
 import Triumphant from "../components/Triumphant";
 import CharritySection from "../components/CharritySection";
 import Banner2 from "../components/Banner2";
-import Banner from "../components/Banner";
+
 
 
 
