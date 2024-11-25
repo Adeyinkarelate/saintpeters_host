@@ -43,7 +43,7 @@ const Banner2 = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.7 }}
-            className="text-4xl md:text-6xl  text-slate-50"
+            className="text-4xl md:text-6xl font-semibold  text-slate-50"
           >
             OF ST PETER’S <br /> SOCIETY,
           </motion.h1>

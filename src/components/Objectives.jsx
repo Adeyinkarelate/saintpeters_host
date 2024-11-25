@@ -1,7 +1,6 @@
 import React from "react";
-import { aims ,clubs } from "../constant/index";
+import { aims, clubs } from "../constant/index";
 import { motion } from "framer-motion";
-
 
 const socialIconsVariants = {
   hidden: { opacity: 0 },
@@ -35,7 +34,7 @@ const Objectives = () => {
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="  text-center md:my-4 md:text-4xl my-6 p-6 md:p-0 text-3xl"
+        className="  text-center font-semibold md:my-4 md:text-4xl my-6 p-6 md:p-0 text-3xl"
       >
         AIM & OBJECTIVES
       </motion.h1>
@@ -53,16 +52,14 @@ const Objectives = () => {
               className="bg-gray-200 shadow-md w-full min-h-64 p-4 flex flex-col justify-center items-center text-center rounded-lg hover:bg-orange-500 text-green-950 hover:text-white "
               key={index}
             >
-              <div className="text-5xl ">
-                {item.icon}
-              </div>
+              <div className="text-5xl ">{item.icon}</div>
               <p className="text-md p-3 mt-2 tracking-wider ">{item.obj}</p>
-
             </motion.div>
           ))}
         </motion.div>
-         {/* You can open the modal using document.getElementById('ID').showModal() method */}
-         <motion.button
+        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+        <div className="flex justify-center  my-6">
+          <motion.button
             initial={{
               opacity: 0,
               y: 50,
@@ -70,7 +67,7 @@ const Objectives = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.2 }}
-            className="btn my-4 bg-[#ff7433] text-white"
+            className="btn bg-[#ff7433] text-white"
             onClick={() => document.getElementById("my_modal_44").showModal()}
           >
             Read More
@@ -83,16 +80,23 @@ const Objectives = () => {
                   ✕
                 </button>
               </form>
-              <h3 className="font-bold text-lg text-green-950">AIM & OBJECTIVES</h3>
+              <h3 className="font-bold text-lg text-green-950">
+                AIM & OBJECTIVES
+              </h3>
               <ul className="py-4">
-                 {clubs.map((c,index)=>(
-                  <li key={index} className="py-3 my-3 text-sm tracking-wider text-green-950">{c.obj}</li>
-                 ))}
+                {clubs.map((c, index) => (
+                  <li
+                    key={index}
+                    className="py-3 my-3 text-sm tracking-wider text-green-950"
+                  >
+                    {c.obj}
+                  </li>
+                ))}
               </ul>
             </div>
           </dialog>
-
-          {/*  */}
+        </div>
+        {/*  */}
       </div>
     </div>
   );
