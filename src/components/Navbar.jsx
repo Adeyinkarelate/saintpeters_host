@@ -42,7 +42,7 @@ const Navbar = () => {
               onClick={() => navigate("event")}
               className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
             >
-              Event
+              Excursion
             </button>
           </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                   onClick={() => navigate("event")}
                   className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
                 >
-                  Event
+                  Excursion
                 </button>
               </div>
             </div>

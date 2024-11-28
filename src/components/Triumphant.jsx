@@ -30,23 +30,28 @@ const Triumphant = () => {
           the society. May our good Lord Grant them eternal rest. Amen
         </motion.p>
 
-        <ul className="grid grid-cols-2 md:grid-cols-3 pb-4 my-6">
-          {members.map((name, index) => (
-            <motion.li
-              initial={{
-                opacity: 0,
-                x: -50,
-              }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              key={index}
-              className="text-sm tracking-wider py-2 text-neutral-700"
-            >
-              {name} <br />
-            </motion.li>
-          ))}
-        </ul>
+        {/*  */}
+        <div className=" py-16">
+          <div className="grid md:grid-cols-3 gap-4  my-5">
+            {members.map((p, index) => (
+              <div
+                className=" p-2 px-3 rounded cursor-pointer hover:bg-[#ffffff26] "
+                key={index}
+              >
+                <img
+                  className="rounded h-64 object-cover w-full"
+                  src={p.image}
+                  alt=""
+                />
+                <p className="font-bold mt-2 mb-1">{p.name}</p>
+                {/* <p className=" text-slate-900 text-sm">{p.position}</p> */}
+                <p className=" text-orange-600 font-bold text-sm">{p.DD}</p> 
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/*  */}
       </div>
       {/*  */}
     </section>

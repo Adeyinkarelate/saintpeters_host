@@ -60,6 +60,8 @@ import pst3 from "../assets/image/Thomas.png";
 import pst4 from "../assets/image/stanley.png";
 import pst5 from "../assets/image/default.jpg";
 
+
+
 export const navItem = [
   { label: "Home", href: "/" },
   { label: "Active Members", href: "/current" },
@@ -150,25 +152,18 @@ export const clubs = [
   },
 ];
 
-// export const members = [
-//   { name: "Mr. Femi Kalesanwo", image: user1, },
-//   { name: "Mr. Phillip Opadijo", image: user1, },
-//   { name: "Mr. JK Diyaolu", image: user1, },
-//   { name: "Mr. FI Agu", image: user1, },
-//   { name: "Mr. JT Olatunde", image: user1, },
-//   { name: "Mr. Osita Anigwe", image: user1, },
-//   { name: "Olootu Patrick Olusegun Ogunfolaji", image: user1, }
-// ];
 
 export const members = [
-  ["Mr. Femi Kalesanwo"],
-  ["Mr. Phillip Opadijo"],
-  ["Mr. JK Diyaolu"],
-  ["Mr. FI Agu"],
-  ["Mr. JT Olatunde"],
-  ["Mr. Osita Anigwe"],
-  ["Olootu Patrick Olusegun Ogunfolaji"],
+  { name: "Mr. Femi Kalesanwo", image: pst5,DD:"Nill" },
+  { name: "Mr. Phillip Opadijo", image: pst5,DD:"Nill" },
+  { name: "Mr. JK Diyaolu", image: pst5,DD:"Nill" },
+  { name: "Mr. FI Agu", image: pst5,DD:"Nill" },
+  { name: "Mr. JT Olatunde", image: pst5,DD:"Nill" },
+  { name: "Mr. Osita Anigwe", image: pst5,DD:"Nill" },
+  { name: "Olootu Patrick Olusegun Ogunfolaji", image: pst5,DD:"Nill" }
 ];
+
+
 
 export const current_exco = [
   {

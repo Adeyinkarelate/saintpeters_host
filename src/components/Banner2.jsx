@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { namesOne, nameTwo, nameThree } from "../constant/index";
-import bg3 from "/bg3.jpg";
-import bg1 from "/b1.jpg";
-import bg2 from "/female-use.jpg";
+import bg3 from "/female-use.jpg";
+import bg1 from "/b2.jpg";
+import bg2 from "/b1.jpg";
 import bg4 from "/men_alne2.jpg";
 import bg5 from "/men-alone.jpg";
 
-const images = [bg3,bg1,bg2, bg4, bg5];
+const images = [bg1,bg2,bg3,bg4,bg5];
 
 const Banner2 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

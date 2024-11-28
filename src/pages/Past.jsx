@@ -5,7 +5,7 @@ import { past_member } from "../constant";
 const Past = () => {
   return (
     <>
-      <Hero title="Past President" />
+      <Hero title="Past Presidents" />
       <div className="container mx-auto md:px-12 px-4 py-16">
         <div className="grid md:grid-cols-4 gap-4  my-5">
           {past_member.map((p, index) => (
