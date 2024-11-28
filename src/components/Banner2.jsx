@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import { namesOne, nameTwo, nameThree } from "../constant/index";
 import bg3 from "/bg3.jpg";
 import bg1 from "/b1.jpg";
-import b2 from "/b2.jpg";
+import bg2 from "/female-use.jpg";
+import bg4 from "/men_alne2.jpg";
+import bg5 from "/men-alone.jpg";
 
-const images = [b2, bg1, bg3];
+const images = [bg3,bg1,bg2, bg4, bg5];
 
 const Banner2 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,7 +22,7 @@ const Banner2 = () => {
 
   return (
     <section className="bg-green-950 py-20 px-6 md:px-16 min-h-[600px]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="max-w-10xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left Side */}
         <div className="space-y-6">
           <motion.h3
@@ -65,7 +67,7 @@ const Banner2 = () => {
             className="btn my-4 bg-[#ee692a] text-white"
             onClick={() => document.getElementById("my_modal_46").showModal()}
           >
-            Read More 
+            Read More
           </motion.button>
           <dialog id="my_modal_46" className="modal">
             <div className="modal-box">

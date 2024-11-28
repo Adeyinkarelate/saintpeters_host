@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 import { current_exco } from "../constant/index";
-import Exco from "../components/Exco";
 
 const Current = () => {
   const name = "Active Members";
@@ -34,14 +33,6 @@ const Current = () => {
     <div>
       <Hero title={name} />
 
-      <Exco
-        closeModal={closeModal}
-        selectedIndividual={selectedIndividual}
-        setSelectedIndividual={setSelectedIndividual}
-        handleReadMore={handleReadMore}
-        socialIconsVariants={socialIconsVariants}
-      />
-
       <motion.div
         variants={socialIconsVariants}
         initial="hidden"
@@ -49,7 +40,7 @@ const Current = () => {
         viewport={{ once: true }}
         className="container mx-auto md:px-12 my-10 px-3"
       >
-        <div className="grid md:grid-cols-3 gap-4 md:px-4">
+        <div className="grid md:grid-cols-4 gap-4 md:px-4">
           {current_exco.map((individual, index) => (
             <div
               className="relative h-[450px] rounded-lg overflow-hidden"
@@ -58,20 +49,19 @@ const Current = () => {
               <img
                 src={individual.image}
                 alt={`${individual.name}'s image`}
-                className="w-full h-full object-cover"
+                className="w-full h-80 object-cover"
               />
-              <div className="absolute bottom-2 left-2 flex flex-row justify-between items-center space-x-4 bg-black opacity-70 p-5 w-full">
-                <div>
-                  <h2 className="text-white font-bold">{individual.name}</h2>
-                  <p className="text-white">{individual.position}</p>
-                </div>
-                <button
-                  className="btn bg-[#f77f00] text-white"
-                  onClick={() => handleReadMore(individual)}
-                >
-                  Read More
-                </button>
-              </div>
+
+              <h3 className="text-black text-xl tracking-wider">
+                {individual.name}
+              </h3>
+              <p className="text-neutral-900 text-sm">{individual.position}</p>
+              <button
+                className="text-orange-600 cursor-pointer"
+                onClick={() => handleReadMore(individual)}
+              >
+                Read More
+              </button>
             </div>
           ))}
         </div>
@@ -83,30 +73,29 @@ const Current = () => {
           <div className="modal-box relative">
             <button
               onClick={closeModal}
-              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2  text-3xl bg-red-500 text-white"
             >
               ✕
             </button>
             <h3 className="font-bold text-lg">{selectedIndividual.name2}</h3>
-            {/* <p className="text-gray-500">{selectedIndividual.position}</p> */}
-            <div className="p-4 flex flex-col items-center gap-4">
+            <motion.div
+              variants={socialIconsVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4 w-full"
+            >
               <img
-                className="w-full h-80 object-cover rounded"
-                src={selectedIndividual.wife}
-                alt={`${selectedIndividual.wife}'s image`}
+                className="rounded w-full md:w-1/2 h-80"
+                src={selectedIndividual.wifeImage1}
+                alt="Image 1"
               />
-              <p>{selectedIndividual.description}</p>
-              {selectedIndividual.name && (
-                <div>
-                  <h4 className="text-gray-700 font-semibold">Spouse:</h4>
-                  <img
-                    className="w-32 h-32 object-cover rounded"
-                    src={selectedIndividual.wife}
-                    alt="Spouse"
-                  />
-                </div>
-              )}
-            </div>
+              <img
+                className="rounded w-full md:w-1/2 h-80"
+                src={selectedIndividual.wifeImage2}
+                alt="Image 2"
+              />
+            </motion.div>
           </div>
         </dialog>
       )}
