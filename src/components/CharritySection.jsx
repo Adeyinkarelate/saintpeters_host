@@ -119,8 +119,6 @@ const CharritySection = () => {
                 Deanery. At the moment, our members spread across the following
                 churches: <br />
                 <br />
-                SS Peter & Paul Church, Itesi, Abeokuta. <br />
-                <br />
                 St, Anne Catholic Church, Ibara, Abeokuta. <br /> <br />
                 St. Rita Catholic Church, Ijaye, Abeokuta. <br />
                 <br />
@@ -128,8 +126,6 @@ const CharritySection = () => {
                 <br />
                 <br />
                 St. Andrew Catholic Church, Olomore, Abeokuta. <br />
-                <br />
-                St. Martins Catholic Church, Eleweran, Abeokuta. <br />
                 <br />
                 Blessed Tansi Catholic Church, Aule Road, Akure. <br />
                 <br />

@@ -159,7 +159,7 @@ export const members = [
   { name: "Mr. JK Diyaolu", image: pst5,DD:"Nill" },
   { name: "Mr. FI Agu", image: pst5,DD:"Nill" },
   { name: "Mr. JT Olatunde", image: pst5,DD:"Nill" },
-  { name: "Mr. Osita Anigwe", image: pst5,DD:"Nill" },
+  { name: "Mr. Martins Osita Anigwe", image: pst5,DD:"Nill" },
   { name: "Olootu Patrick Olusegun Ogunfolaji", image: pst5,DD:"Nill" }
 ];
 
