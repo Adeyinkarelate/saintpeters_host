@@ -49,7 +49,7 @@ import cor3a from "../assets/image/irepe.png";
 import wf1 from "../assets/image/diyaolu-t.png";
 import wf1a from "../assets/image/diyaolu-wife1.png";
 import wf2 from "../assets/image/Mr. & Mrs. Taiwo Ogunfolaji.jpg";
-import wf4 from "../assets/image/op.jpg";
+import wf4 from "../assets/image/opara_wife.png";
 import wf5 from "../assets/image/adeboyega2.png";
 import wf4a from "../assets/image/opara-1.png";
 
@@ -57,7 +57,9 @@ import wf4a from "../assets/image/opara-1.png";
 import pst1 from "../assets/image/timoti.jpg";
 import pst2 from "../assets/image/Peter Kayode.png";
 import pst3 from "../assets/image/Thomas.png";
-import pst4 from "../assets/image/stanley.png";
+import pst4 from "../assets/image/stanly-A.png";
+import pst4b from "../assets/image/stanley-B.png";
+import pst4c from "../assets/image/stanley2.png";
 import pst5 from "../assets/image/default.jpg";
 
 
@@ -164,7 +166,6 @@ export const members = [
 ];
 
 
-
 export const current_exco = [
   {
     name: "Mr.George Diyaolu",
@@ -181,6 +182,14 @@ export const current_exco = [
     position: "Past President",
     wifeImage1:user19b, 
     wifeImage2:user19a,
+  },
+  {
+    name: "Dr. Stanley Aikulola",
+    name2: "Mrs. Stanley Aikulola",
+    image: pst4,
+    position: "Past President",
+    wifeImage1:pst4b, 
+    wifeImage2:pst4c,
   },
   {
     name: "Mr. Taiwo Ogunfolaji",
