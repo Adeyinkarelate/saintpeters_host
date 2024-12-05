@@ -27,7 +27,7 @@ const Exco = ({
               <img
                 src={individual.image}
                 alt={`${individual.name}'s image`}
-                className="w-full h-full object-cover py-6"
+                className="w-full h-full object-cover"
               />
               <div className="absolute bottom-2 left-2 flex flex-row justify-between items-center space-x-4 bg-black opacity-70 p-5 w-full">
                 <div>

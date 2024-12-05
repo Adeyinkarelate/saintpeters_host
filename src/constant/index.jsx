@@ -18,7 +18,7 @@ import user0 from "../assets/image/Mr. Taiwo Ogunfolaji.jpg";
 import user13 from "../assets/image/patrick.png";
 import user13b from "../assets/image/patrick-b.png";
 import user13a from "../assets/image/onabule-a.png";
-import user14 from "../assets/image/roland.png";
+import user14 from "../assets/image/roo.png";
 import user14b from "../assets/image/roland-w.png";
 import user14a from "../assets/image/rolland-t.png";
 import user15 from "../assets/image/lekan1.png";

@@ -40,16 +40,16 @@ const Current = () => {
         viewport={{ once: true }}
         className="container mx-auto md:px-12 my-10 px-3"
       >
-        <div className="grid md:grid-cols-4 gap-4 md:px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:px-4">
           {current_exco.map((individual, index) => (
             <div
-              className="relative h-[450px] rounded-lg overflow-hidden"
+              className="relative h-[500px] rounded-lg overflow-hidden"
               key={index}
             >
               <img
                 src={individual.image}
                 alt={`${individual.name}'s image`}
-                className="w-full h-80 object-cover"
+                className="w-full h-96 object-cover"
               />
 
               <h3 className="text-black text-xl tracking-wider">
