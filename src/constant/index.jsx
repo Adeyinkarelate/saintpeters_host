@@ -330,6 +330,9 @@ export const past_member = [
     position: "Current President",
     image: cor1,
     tiem: "2021 till-date",
+    wifeImage1: cor1b,
+    name2:"Mrs Diyaolu",
+    
   },
 
   {
@@ -337,67 +340,87 @@ export const past_member = [
     position: "President",
     image: pst2,
     tiem: "2018 - 2021",
+    name2: "Mrs. Mary Olayinka Adigun",
+    wifeImage1:user19a, 
   },
   {
     name: "Mr Gabriel Ajani Olutan",
     position: "President",
     image:pst5,
-    tiem:"2014 - 2018" 
+    tiem:"2014 - 2018",
+    name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Dr. Stanley Aikulola",
     position: "Presidet",
     image: pst4,
-    tiem:"2010 - 2014" 
+    tiem:"2010 - 2014",
+    name2: "Mrs. Stanley Aikulola",
+    wifeImage1:pst4b,
   },
   {
     name: "Timothy Ayoola Olatunji FICA, MCIPM, JP",
     position: "President",
     image: pst1,
-    tiem:"2006 - 2010 " 
+    tiem:"2006 - 2010 " ,
+    name2: "",
+    wifeImage1:"", 
   },
   
   {
     name: "Mr. Thomas Aregbesola",
     position: "President",
     image: pst3,
-    tiem:"2002 - 2006" 
+    tiem:"2002 - 2006" ,
+    name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Mr Dele Adewunmi",
     position: "President",
     image:pst5,
-    tiem:"1998 - 2000" 
+    tiem:"1998 - 2000" ,
+    name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Mr A.K.A Odeyinka",
     position: "President",
     image:pst5,
-    tiem:"1994 - 1996" 
+    tiem:"1994 - 1996" ,
+    name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Mr Femi Kalesanwo",
     position: "President",
     image:pst5,
-    tiem:"1990 - 1994" 
+    tiem:"1990 - 1994" ,
+    name2: "",
+    wifeImage1:"", name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Mr Sofela Coker",
     position: "President",
     image:pst5,
-    tiem:"1986 - 1988" 
+    tiem:"1986 - 1988" ,name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Late Olootu Patrick Olusegun Ogunfolaji",
     position: "President",
     image:pst5,
-    tiem:"1984 - 1986" 
+    tiem:"1984 - 1986" ,name2: "",
+    wifeImage1:"", 
   },
   {
     name: "Mr Henry Ibiyemi Lawrence",
     position: "President",
     image:pst5,
-    tiem:"1983 - 1984" 
+    tiem:"1983 - 1984" ,name2: "",
+    wifeImage1:"", 
   },
   
 ];
