@@ -1,41 +1,38 @@
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 import Hero from "../components/Hero";
+import Swal from "sweetalert2";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    message: "",
-  });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    formData.append("access_key", "putapi");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success",
+        text: "Message sent successfully",
+        icon: "success",
+      });
+      event.target.reset();
+    } else {
+      Swal.fire("Error : Contact admin");
+    }
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-        formData,
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
-          alert("Message sent successfully!");
-          setFormData({ username: "", email: "", message: "" });
-        },
-        (error) => {
-          console.log("Failed to send email:", error.text);
-          alert("Failed to send message. Please try again later.");
-        }
-      );
-  };
-
   return (
     <>
       <Hero title="Contact" />
@@ -59,7 +56,7 @@ const Contact = () => {
           <div className="flex flex-col space-y-2 text-gray-700">
             <div className="flex items-center space-x-2">
               <i className="fas fa-phone-alt text-orange-500 "></i>
-              <span>+45 677 8993000 223</span>
+              <span>+234 000000 0000</span>
             </div>
             <div className="flex items-center space-x-2 ">
               <i className="fas fa-envelope text-orange-500 "></i>
@@ -67,40 +64,37 @@ const Contact = () => {
             </div>
             <div className="flex items-center space-x-2">
               <i className="fas fa-map-marker-alt text-orange-500 "></i>
-              <span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span>
+              <span>Abeokuta,Ogun state</span>
             </div>
           </div>
         </div>
 
         <div className="w-full md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-lg">
-          <form className="flex flex-col space-y-4">
+          <form className="flex flex-col space-y-4" onSubmit={onSubmit}>
             <input
               type="text"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
-              placeholder="Name"
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              name="name"
+              required
+              placeholder="Full Name"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-800"
             />
             <input
               type="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
+              required
               placeholder="Email"
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-800"
             />
             <textarea
               name="message"
-              value={formData.message}
-              onChange={handleChange}
               placeholder="Messages"
+              required
               rows="4"
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 h-80 resize-none"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-800 h-80 resize-none"
             ></textarea>
             <button
               type="submit"
-              className="self-start px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
+              className="self-start px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 focus:ring-2 focus:ring-green-800 focus:ring-opacity-50"
             >
               Contact us
             </button>

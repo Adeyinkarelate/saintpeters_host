@@ -17,6 +17,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
+    "sweetalert2": "^11.15.10",
     "taos": "^1.0.5",
     "tw-elements": "^2.0.0"
   },
