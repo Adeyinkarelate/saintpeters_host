@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <>
       <Hero title="Contact" />
-      <div className="flex flex-col md:flex-row items-center md:items-start p-8 bg-gray-50 space-y-8 md:space-y-0 md:space-x-8">
+      <div className="flex flex-col md:flex-row items-center md:items-start p-8 bg-gray-50 space-y-8 md:space-y-0 md:space-x-8 my-32">
         <div className="w-full md:w-1/2 text-gray-700">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
             Get in touch with us
@@ -96,7 +96,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Messages"
               rows="4"
-              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 h-80 resize-none"
             ></textarea>
             <button
               type="submit"

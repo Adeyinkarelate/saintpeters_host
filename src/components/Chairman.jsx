@@ -44,11 +44,16 @@ const Chairman = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="mt-4 text-gray-600 text-lg"
+            className="mt-4 text-gray-600 text-sm text-justify tracking-wider"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut
-            sem viverra aliquet eget sit amet. Nunc scelerisque.
+            I welcome you to St. Peter Society’s website. This Society has been
+            in existence since 1983. It has its roots in St. Anne Catholic
+            Church, Ibara, Abeokuta, Ogun State, in the Catholic Diocese of
+            Abeokuta. <br /> <br /> Today, members of the Society cut across
+            different parishes in the Catholic Diocese of Abeokuta. We have our
+            members worshiping at St. Anne Catholic Church, Ibara; Our Lady Seat
+            of Wisdom Adigbe; St. Andrew Catholic Church, Olomore; Holy Family
+            Catholic Church, Asero; and St. Rita, Catholic Church, Ijaye...
           </motion.p>
           {/*  */}
           {/* You can open the modal using document.getElementById('ID').showModal() method */}
@@ -73,15 +78,32 @@ const Chairman = () => {
                   ✕
                 </button>
               </form>
-              <h3 className="font-bold text-lg">Hello!</h3>
-              <p className="py-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                reiciendis debitis repellat quos quis, similique consectetur
-                voluptatibus harum libero minima ipsa eos iure illo soluta in
-                dolorum cum. Sequi fuga, fugiat corporis minus nesciunt impedit
-                quos earum, reiciendis, a excepturi harum iure. Quasi beatae
-                reprehenderit quam natus optio soluta doloribus ipsum sequi
-                rerum iure. Minus aspernatur porro magnam nam ducimus!
+              <h3 className="font-bold text-lg">Cont..</h3>
+              <p className="py-4 mt-4 text-gray-600 text-sm text-justify tracking-wider">
+                We are dedicated Catholics and gentlemen of like minds who came
+                together to promote Christianity within and outside the Catholic
+                Church. We foster cooperation and love among members and our
+                families through the organization of educational and
+                recreational activities for members and our families. <br /><br />
+                 St. Peter Society is a family society in that as you join, your wife and
+                children are automatically inducted into the membership of the
+                Society. <br /><br /> 
+                Membership of the Society is open ONLY to baptized,
+                gainfully employed, and married Catholic men who are
+                communicants and are in good standing in the Church. <br /><br /> 
+                The Society selects its membership through a very rigorous
+                recruitment/membership process which spans about three (3)
+                months for prospective members. <br /><br />
+                The constitution of the Society (as amended) provides for a maximum of 30 membership strength.
+                However, as of the moment (year ending 2024), the Society has 27
+                financially active members. <br /><br />
+                The Society is well known in the Catholic Diocese of Abeokuta for its proactive and dynamic
+                nature of membership and family programmes.  <br /><br />
+                It is my pleasure therefore, to introduce and welcome you to the society of the
+                moment, the great St. Peter Society.  <br /><br /> Thank you. <br /><br />
+                
+                Mr. George Oludare Diyaolu  <br />
+                President
               </p>
             </div>
           </dialog>
