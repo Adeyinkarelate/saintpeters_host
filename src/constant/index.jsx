@@ -1,5 +1,5 @@
 import user1 from "../assets/image/opara.png";
-import user4 from "../assets/image/adegboyega.png";
+import user4 from "../assets/image/titcom.png";
 import user5 from "../assets/image/adeniyi.png";
 import user5a from "../assets/image/adeniyi-1.png";
 import user5b from "../assets/image/adeni-2.png";
@@ -14,7 +14,7 @@ import user10b from "../assets/image/fagbenro-w.png";
 import user11b from "../assets/image/oyibo-m.png";
 import user11 from "../assets/image/oyinbo.png";
 import user11a from "../assets/image/oyibo-wife.png";
-import user0 from "../assets/image/Mr. Taiwo Ogunfolaji.jpg";
+import user0 from "../assets/image/taiwonew.png";
 import user13 from "../assets/image/patrick.png";
 import user13b from "../assets/image/patrick-b.png";
 import user13a from "../assets/image/onabule-a.png";
@@ -36,9 +36,14 @@ import user18b from "../assets/image/felix-w.png";
 import user19 from "../assets/image/adigun.png";
 import user19b from "../assets/image/adigun-t.png";
 import user19a from "../assets/image/adigun-w.png";
+import user20 from "../assets/image/aregbesola.png";
 
-import cor1 from "../assets/image/Mr._George_Diyaolu.png";  
-import cor1b from "../assets/image/diyawife.png";   // president wife to be change
+import user21 from "../assets/image/adegoke-1.png";
+import user21b from "../assets/image/adegoke-2.png";
+import user21w from "../assets/image/adegoke-Wife.png";
+
+import cor1 from "../assets/image/Mr._George_Diyaolu.png";
+import cor1b from "../assets/image/diyawife.png"; // president wife to be change
 import cor2 from "../assets/image/Mr. Dennis Oni.jpg";
 import cor2b from "../assets/image/denis-wife.png";
 import cor2a from "../assets/image/oni2a.png";
@@ -50,9 +55,9 @@ import wf1 from "../assets/image/diyaolu-t.png";
 import wf1a from "../assets/image/diyaolu-wife1.png";
 import wf2 from "../assets/image/Mr. & Mrs. Taiwo Ogunfolaji.jpg";
 import wf4 from "../assets/image/opara_wife.png";
-import wf5 from "../assets/image/adeboyega2.png";
+import wf5 from "../assets/image/titcom-b.png";
+import wf5b from "../assets/image/titcomWf.png";
 import wf4a from "../assets/image/opara-1.png";
-
 
 import pst1 from "../assets/image/timoti.jpg";
 import pst2 from "../assets/image/Peter Kayode.png";
@@ -60,9 +65,13 @@ import pst3 from "../assets/image/Thomas.png";
 import pst4 from "../assets/image/stanly-A.png";
 import pst4b from "../assets/image/stanley-B.png";
 import pst4c from "../assets/image/stanley2.png";
+import pst6 from "../assets/image/olutan.png";
 import pst5 from "../assets/image/default.jpg";
+import pst7 from "../assets/image/olotu.png";
+import pst7b from "../assets/image/OlutanWf.png";
 
-
+// triumphant
+import m1 from "../assets/image/olotu.png";
 
 export const navItem = [
   { label: "Home", href: "/" },
@@ -154,175 +163,250 @@ export const clubs = [
   },
 ];
 
-
 export const members = [
-  { name: "Mr. Femi Kalesanwo", image: pst5,DD:"Nill" },
-  { name: "Mr. Phillip Opadijo", image: pst5,DD:"Nill" },
-  { name: "Mr. JK Diyaolu", image: pst5,DD:"Nill" },
-  { name: "Mr. FI Agu", image: pst5,DD:"Nill" },
-  { name: "Mr. JT Olatunde", image: pst5,DD:"Nill" },
-  { name: "Mr. Martins Osita Anigwe", image: pst5,DD:"Nill" },
-  { name: "Olootu Patrick Olusegun Ogunfolaji", image: pst5,DD:"Nill" }
+  { name: "Mr. Femi Kalesanwo", image: pst5, DD: "Nill" },
+  { name: "Mr. Phillip Opadijo", image: pst5, DD: "Nill" },
+  { name: "Mr. JK Diyaolu", image: pst5, DD: "Nill" },
+  { name: "Mr. FI Agu", image: pst5, DD: "Nill" },
+  { name: "Mr. JT Olatunde", image: pst5, DD: "Nill" },
+  { name: "Mr. Martins Osita Anigwe", image: pst5, DD: "Nill" },
+  { name: "Olootu Patrick Olusegun Ogunfolaji", image: m1, DD: "Nill" },
 ];
-
 
 export const current_exco = [
   {
-    name: "Mr.George Diyaolu",
-    name2:"",
+    name: "Mr.George Oludare Diyaolu",
+    name2: "Mrs Susannah Modupeola Diyaolu",
     image: cor1,
     position: "President",
     wifeImage1: cor1b,
-    wifeImage2:wf1,
+    wifeImage2: wf1,
   },
   {
-    name: "Mr. Peter Adigun",
+    name: "Mr. Peter Olukayode Adigun",
     name2: "Mrs. Mary Olayinka Adigun",
     image: user19,
     position: "Past President",
-    wifeImage1:user19b, 
-    wifeImage2:user19a,
+    wifeImage1: user19b,
+    wifeImage2: user19a,
   },
   {
-    name: "Dr. Stanley Aikulola",
-    name2: "Mrs. Stanley Aikulola",
+    name: "Dr.Stanley Olu Ola Aikulola",
+    name2: "Mrs. Folake Aikulola",
     image: pst4,
     position: "Past President",
-    wifeImage1:pst4b, 
-    wifeImage2:pst4c,
+    wifeImage1: pst4b,
+    wifeImage2: pst4c,
   },
   {
-    name: "Mr. Taiwo Ogunfolaji",
-    name2:"Mrs. Mena Ogunfolaji",
+    name: "Mr.Taiwo Michael Ogunfolaji",
+    name2: "Mrs.Josephine Mena Ogunfolaji",
     image: user0,
     position: "Vice President",
     wifeImage1: wf1a,
-    wifeImage2:wf2,
+    wifeImage2: wf2,
   },
   {
-    name: "Mr. Segun Adeniyi",
+    name: "Mr.James Olusegun Adeniyi",
     name2: "Mrs. Alice Oluyemisi Adeniyi",
     image: user5,
     position: "Secretary",
     wifeImage1: user5a,
-    wifeImage2:user5b,
+    wifeImage2: user5b,
   },
   {
-    name: "Mr. George Opara",
+    name: "Mr. George Uwaoma Opara",
     name2: "Mrs. Comfort Idongesit Opara",
     image: user1,
     position: "Active Member",
     wifeImage1: wf4a,
-    wifeImage2:wf4,
+    wifeImage2: wf4,
   },
   {
-    name: "Mr. Dennis Oyewunmi Oni",
-    name2:"Mrs Janet Omolola Oni",
+    name: "Mr. Dennis Oyewunmi Oni",
+    name2: "Mrs. Janet Omolola Oni",
     image: cor2,
     position: "Active Member",
     wifeImage1: cor2a,
-    wifeImage2:cor2b,
+    wifeImage2: cor2b,
   },
   {
-    name: "Mr. Irekpita Imhoede Francis MNIQS, RQS",
-    name2:"Mrs. Irekpita Otseda Francisca",
+    name: "Mr.Francis Imhoede Irekpita MNIQS, RQS",
+    name2: "Mrs.Francisca Otseda Irekpita",
     image: cor3,
     position: "Active Member",
     wifeImage1: cor3a,
-    wifeImage2:cor3b,
+    wifeImage2: cor3b,
   },
   {
-    name: "Mr. Titicom Adegboyega",
-    name2: "Mr. & Mrs Titcombe Adegboyega",
+    name: "Mr. Edward Adegboyega Titcombe",
+    name2: "Mrs. Maria Ayodele Titcombe ",
     image: user4,
     position: "Active Member",
-    wifeImage1: wf5,
-    wifeImage2:wf5,
+    wifeImage1: wf5b,
+    wifeImage2: wf5,
   },
   {
-    name: "Mr. Patrick Onabule FCA",
-    name2: "Onabule, Francisca Abosede  CNA  ACIT",
+    name: "Mr. Patrick Olayiwola Onabule, FCA",
+    name2: "Mrs. Francisca Abosede Onabule, CNA, ACIT",
     image: user13,
     position: "Active Member",
-    wifeImage1:user13a,
-    wifeImage2:user13b,
+    wifeImage1: user13a,
+    wifeImage2: user13b,
   },
   {
-    name: "Mr. Oyibo Martin Ogagaoghene",
-    name2: "OYIBO MARY OROKPO",
+    name: "Mr. Martin Ogagaoghene Oyibo",
+    name2: "Mrs. Mary Orokpo Oyibo",
     image: user11b,
     position: "Active Member",
-    wifeImage1:user11a,
-    wifeImage2:user11,
+    wifeImage1: user11a,
+    wifeImage2: user11,
   },
   {
-    name: "Mr. Anthony Ogundipe",
-    name2: "Mr. and Mrs. Ogundipe", //wife name
+    name: "Mr. Anthony Oluwaseyi Ogundipe",
+    name2: "Mrs. Folake Rachael Ogundipe", //wife name
     image: user9a,
     position: "Active Member",
-    wifeImage1:user9, // the wife piicture
-    wifeImage2:user9,
+    wifeImage1: user9, // the wife piicture
+    wifeImage2: user9,
   },
   {
-    name: "Mr. Michael Fatumbi",
-    name2: "Mrs Victoria Adetola Fatunbi",
+    name: "TPL. Michael Akanbi Fatunbi",
+    name2: "Mrs. Victoria Adetola Fatunbi",
     image: user6,
     position: "Active Member",
-    wifeImage1:user6a, 
-    wifeImage2:user6b,
+    wifeImage1: user6a,
+    wifeImage2: user6b,
   },
   {
-    name: "Mr. and Mrs Fagbenro",
-    name2: "Mrs Olufunmilayo Elizabeth  Fagbenro",
+    name: "Mr. Michael Adeolu Fagbenro",
+    name2: "Mrs. Olufunmilayo Elizabeth  Fagbenro",
     image: user10,
     position: "Active Member",
-    wifeImage1:user10b, 
-    wifeImage2:user10a,
+    wifeImage1: user10b,
+    wifeImage2: user10a,
   },
   {
-    name: "Mr Rowland Ashiemamho Iseh",
-    name2: "Mrs Margaret Esmoshiogue Iseh ", 
+    name: "Mr. Rowland Ashiemamho Iseh",
+    name2: "Mrs. Margaret Emoshiogue Iseh ",
     image: user14,
     position: "Active Member",
-    wifeImage1:user14b, 
-    wifeImage2:user14a,
-    
+    wifeImage1: user14b,
+    wifeImage2: user14a,
   },
   {
-    name: "Mr. Lekan Oluyide Architect",
-    name2: "Mrs Oluyide",   //wife name
+    name: "Architect. Francis Olamilekan Oliyide",
+    name2: "Mrs Francisca Abimbola Oliyide", //wife name
     image: user15,
     position: "Active Member",
-    wifeImage1:user15b, 
-    wifeImage2:user15a,
+    wifeImage1: user15b,
+    wifeImage2: user15a,
   },
   {
     name: "Mr. Adedamola Adejobi",
-    name2: "Mrs Olusola Rita Adejobi",
+    name2: "Mrs. Olusola Rita Adejobi",
     image: user16,
     position: "Active Member",
-    wifeImage1:user16a, 
-    wifeImage2:user16b,
+    wifeImage1: user16a,
+    wifeImage2: user16b,
   },
   {
-    name: "Mr Ejeh Stephen Olofu",
-    name2: "Mrs Agnes Olofu",
+    name: "Mr. Ejeh Stephen Olofu",
+    name2: "Mrs. Agnes Olofu",
     image: user17,
     position: "Active Member",
-    wifeImage1:user17a, 
-    wifeImage2:user17b,
+    wifeImage1: user17a,
+    wifeImage2: user17b,
   },
   {
     name: "Mr. Felix Ayoola Alajogun.",
-    name2: "Mrs. L.F. Alajogun",
+    name2: "Mrs. Latifat Faderera Alajogun",
     image: user18,
     position: "Active Member",
-    wifeImage1:user18a, 
-    wifeImage2:user18b,
+    wifeImage1: user18a,
+    wifeImage2: user18b,
+  },
+  {
+    name: "Mr. Lawrence Omotunde Owosina ",
+    name2: "Mrs. Agnes Omolara Owosina",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Mr. Anthony Adeoye Adegoke ",
+    name2: "Mrs. Titilayo Patience Adegoke",
+    image: user21,
+    position: "Active Member",
+    wifeImage1: user21b,
+    wifeImage2: user21w,
+  },
+  {
+    name: "Mr. Paul Taiwo Adigun",
+    name2: "Mrs. Mary Taiwo Adigun",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Prince. Felix Temitope Fatona",
+    name2: "Mrs. Mary Arinola Fatona",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Mr. Timothy Ayoola Olatunji",
+    name2: "Mrs. Rosemary Titilola Olatunji",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Mr. Thomas Babatunde Aregbesola",
+    name2: "Mrs. Elizabeth Olufunmilayo Aregbesola",
+    image: user20,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Mr. Anthony Oludayo Akindele",
+    name2: "Mrs. Akindele",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Mr. Timothy Olaleye",
+    name2: "Mrs. Olaleye",
+    image: pst5,
+    position: "Active Member",
+    wifeImage1: pst5,
+    wifeImage2: pst5,
+  },
+  {
+    name: "Dr. Stanley Olu Ola Aikulola",
+    position: "Presidet",
+    image: pst4,
+    tiem: "2010 - 2014",
+    name2: "Mrs. Josephine Olufolake Aikulola",
+    wifeImage1: pst4b,
+  },
+  {
+    name: "Mr. Gabriel Ajani Oladeji Olutan",
+    position: "President",
+    image: pst6,
+    tiem: "2014 - 2018",
+    name2: "Mrs. Mary Ayobami Olutan",
+    wifeImage1: pst7b,
   },
 ];
-
-
 
 export const past_member = [
   {
@@ -331,96 +415,98 @@ export const past_member = [
     image: cor1,
     tiem: "2021 till-date",
     wifeImage1: cor1b,
-    name2:"Mrs Diyaolu",
-    
+    name2: "Mrs Diyaolu",
   },
 
   {
-    name: "Mr. Peter Kayode Adigun",
+    name: "Mr. Peter OluKayode Adigun",
     position: "President",
     image: pst2,
     tiem: "2018 - 2021",
     name2: "Mrs. Mary Olayinka Adigun",
-    wifeImage1:user19a, 
+    wifeImage1: user19a,
   },
   {
-    name: "Mr Gabriel Ajani Olutan",
+    name: "Mr. Gabriel Ajani Oladeji Olutan",
     position: "President",
-    image:pst5,
-    tiem:"2014 - 2018",
-    name2: "",
-    wifeImage1:"", 
+    image: pst6,
+    tiem: "2014 - 2018",
+    name2: "Mrs. Mary Ayobami Olutan",
+    wifeImage1: pst7b,
   },
   {
-    name: "Dr. Stanley Aikulola",
+    name: "Dr. Stanley Olu Ola Aikulola",
     position: "Presidet",
     image: pst4,
-    tiem:"2010 - 2014",
-    name2: "Mrs. Stanley Aikulola",
-    wifeImage1:pst4b,
+    tiem: "2010 - 2014",
+    name2: "Mrs. Josephine Olufolake Aikulola",
+    wifeImage1: pst4b,
   },
   {
-    name: "Timothy Ayoola Olatunji FICA, MCIPM, JP",
+    name: "Mr. Timothy Ayoola Olatunji FICA, MCIPM, JP",
     position: "President",
     image: pst1,
-    tiem:"2006 - 2010 " ,
+    tiem: "2006 - 2010 ",
     name2: "",
-    wifeImage1:"", 
+    wifeImage1: "",
   },
-  
+
   {
     name: "Mr. Thomas Aregbesola",
     position: "President",
-    image: pst3,
-    tiem:"2002 - 2006" ,
+    image: user20,
+    tiem: "2002 - 2006",
     name2: "",
-    wifeImage1:"", 
+    wifeImage1: "",
   },
   {
     name: "Mr Dele Adewunmi",
     position: "President",
-    image:pst5,
-    tiem:"1998 - 2000" ,
+    image: pst5,
+    tiem: "1998 - 2000",
     name2: "",
-    wifeImage1:"", 
+    wifeImage1: "",
   },
   {
     name: "Mr A.K.A Odeyinka",
     position: "President",
-    image:pst5,
-    tiem:"1994 - 1996" ,
+    image: pst5,
+    tiem: "1994 - 1996",
     name2: "",
-    wifeImage1:"", 
+    wifeImage1: "",
   },
   {
     name: "Mr Femi Kalesanwo",
     position: "President",
-    image:pst5,
-    tiem:"1990 - 1994" ,
+    image: pst5,
+    tiem: "1990 - 1994",
     name2: "",
-    wifeImage1:"", name2: "",
-    wifeImage1:"", 
+    wifeImage1: "",
+    name2: "",
+    wifeImage1: "",
   },
   {
     name: "Mr Sofela Coker",
     position: "President",
-    image:pst5,
-    tiem:"1986 - 1988" ,name2: "",
-    wifeImage1:"", 
+    image: pst5,
+    tiem: "1986 - 1988",
+    name2: "",
+    wifeImage1: "",
   },
   {
     name: "Late Olootu Patrick Olusegun Ogunfolaji",
     position: "President",
-    image:pst5,
-    tiem:"1984 - 1986" ,name2: "",
-    wifeImage1:"", 
+    image: pst7,
+    tiem: "1984 - 1986",
+    name2: "",
+    wifeImage1: "",
   },
   {
     name: "Mr Henry Ibiyemi Lawrence",
     position: "President",
-    image:pst5,
-    tiem:"1983 - 1984" ,name2: "",
-    wifeImage1:"", 
+    image: pst5,
+    tiem: "1983 - 1984",
+    name2: "",
+    wifeImage1: "",
   },
-  
 ];

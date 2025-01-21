@@ -25,7 +25,7 @@ const Banner = () => {
             whileInView="animate"
             className="text-3xl font-bold md:text-5xl bg-gradient-to-tr from-slate-50 to-slate-100 bg-clip-text text-transparent leading-tight"
           >
-            THE CHRONILES OF ST PETER’S SOCIETY,
+            THE CHRONILES OF ST PETER SOCIETY,
           </motion.h1>
           <motion.p
             initial={{

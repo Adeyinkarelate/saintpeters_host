@@ -44,7 +44,7 @@ const CharritySection = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="text-3xl md:text-4xl font-bold text-green-950"
           >
-            ST PETER’S SOCIETY <br /> Excursion
+            ST PETER SOCIETY <br /> Excursion
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, x: -50 }}

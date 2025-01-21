@@ -84,24 +84,33 @@ const Chairman = () => {
                 together to promote Christianity within and outside the Catholic
                 Church. We foster cooperation and love among members and our
                 families through the organization of educational and
-                recreational activities for members and our families. <br /><br />
-                 St. Peter Society is a family society in that as you join, your wife and
-                children are automatically inducted into the membership of the
-                Society. <br /><br /> 
-                Membership of the Society is open ONLY to baptized,
-                gainfully employed, and married Catholic men who are
-                communicants and are in good standing in the Church. <br /><br /> 
+                recreational activities for members and our families. <br />
+                <br />
+                St. Peter Society is a family society in that as you join, your
+                wife and children are automatically inducted into the membership
+                of the Society. <br />
+                <br />
+                Membership of the Society is open ONLY to baptized, gainfully
+                employed, and married Catholic men who are communicants and are
+                in good standing in the Church. <br />
+                <br />
                 The Society selects its membership through a very rigorous
                 recruitment/membership process which spans about three (3)
-                months for prospective members. <br /><br />
-                The constitution of the Society (as amended) provides for a maximum of 30 membership strength.
-                However, as of the moment (year ending 2024), the Society has 27
-                financially active members. <br /><br />
-                The Society is well known in the Catholic Diocese of Abeokuta for its proactive and dynamic
-                nature of membership and family programmes.  <br /><br />
-                It is my pleasure therefore, to introduce and welcome you to the society of the
-                moment, the great St. Peter Society.  <br /><br /> Thank you. <br /><br />
-                
+                months for prospective members. <br />
+                <br />
+                The constitution of the Society (as amended) provides for a
+                maximum of 30 membership strength. However, as of the moment
+                (year ending 2024), the Society has 27 financially active
+                members. <br />
+                <br />
+                The Society is well known in the Catholic Diocese of Abeokuta
+                for its proactive and dynamic nature of membership and family
+                programmes. <br />
+                <br />
+                It is my pleasure therefore, to introduce and welcome you to the
+                Society of the moment, the great St. Peter Society. <br />
+                <br /> Thank you. <br />
+                <br />
                 Mr. George Oludare Diyaolu  <br />
                 President
               </p>

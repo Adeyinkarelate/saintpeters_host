@@ -47,7 +47,7 @@ const Banner2 = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="text-4xl md:text-6xl font-semibold  text-slate-50"
           >
-            OF ST PETER’S <br /> SOCIETY,
+            OF ST PETER <br /> SOCIETY,
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -50 }}
