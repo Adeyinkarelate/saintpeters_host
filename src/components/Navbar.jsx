@@ -32,12 +32,12 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden lg:flex justify-center space-x-8 items-center">
-            <button
+            {/* <button
               onClick={() => navigate("contact")}
               className="bg-gradient-to-r text-white font-medium from-orange-500 to-orange-800 px-3 py-2 rounded-md"
             >
               Contact
-            </button>
+            </button> */}
             <button
               onClick={() => navigate("event")}
               className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
@@ -71,12 +71,12 @@ const Navbar = () => {
               </ul>
 
               <div className="flex space-x-6 my-2 md:my-0">
-                <button
+                {/* <button
                   onClick={() => navigate("contact")}
                   className="bg-gradient-to-r from-orange-500 to-orange-800 px-3 py-2 rounded-md"
                 >
                   Contact
-                </button>
+                </button> */}
                 <button
                   onClick={() => navigate("event")}
                   className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"

@@ -1,7 +1,8 @@
+
 import React, { useState } from "react";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
-import { current_exco } from "../constant/index";
+import { current_exco } from "../constant";
 
 const Current = () => {
   const name = "Active Members";
@@ -56,6 +57,7 @@ const Current = () => {
                 {individual.name}
               </h3>
               <p className="text-neutral-900 text-sm">{individual.position}</p>
+              <p className="text-neutral-900 text-sm">{individual.tiem}</p>
               <button
                 className="text-orange-600 cursor-pointer"
                 onClick={() => handleReadMore(individual)}
@@ -93,8 +95,9 @@ const Current = () => {
               <img
                 className="rounded w-full md:w-1/2 h-80"
                 src={selectedIndividual.wifeImage2}
-                alt="Image 2"
+                alt="Image 1"
               />
+              
             </motion.div>
           </div>
         </dialog>
@@ -104,3 +107,4 @@ const Current = () => {
 };
 
 export default Current;
+

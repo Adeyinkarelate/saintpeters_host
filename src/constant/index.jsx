@@ -70,6 +70,16 @@ import pst5 from "../assets/image/default.jpg";
 import pst7 from "../assets/image/olotu.png";
 import pst7b from "../assets/image/OlutanWf.png";
 
+
+
+//==========================the event images=================================================
+
+
+import bg3 from "../assets/image/bg3.jpg";
+import bg2 from "../assets/image/b2.jpg";
+
+// =======================================================================================
+
 // triumphant
 import m1 from "../assets/image/olotu.png";
 
@@ -376,7 +386,7 @@ export const current_exco = [
   },
   {
     name: "Mr. Anthony Oludayo Akindele",
-    name2: "Mrs. Akindele",
+    name2: "Mrs. Anthonia Olubunmi Akindele",
     image: pst5,
     position: "Active Member",
     wifeImage1: pst5,
@@ -508,5 +518,38 @@ export const past_member = [
     tiem: "1983 - 1984",
     name2: "",
     wifeImage1: "",
+  },
+];
+
+
+// =============================================excurssion=========
+export const sections = [
+  {
+    id: 1,
+    title: "HUAWEI FreeBuds Pro 4",
+    category: "PRODUCT",
+    description: "Catch the Sound",
+    images: [bg3,bg2],
+  },
+  {
+    id: 2,
+    title: "Towards an Amazing 2025",
+    category: "YEAR-END VIDEO",
+    description: "Let's cherish every moment we've shared, and with each step, we'll grow stronger",
+    images:[bg3,bg2],
+  },
+  {
+    id: 3,
+    title: "Building a Robust Data Foundation for Financial Excellence",
+    category: "SUCCESS STORY",
+    description: "KBTG and Huawei: A successful collaboration",
+    images: [bg3,bg2],
+  },
+  {
+    id: 4,
+    title: "Digital CORE Solution",
+    category: "SOLUTION",
+    description: "Reliable, Open, and Professional",
+    images: [bg3,bg2],
   },
 ];
