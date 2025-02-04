@@ -582,6 +582,9 @@ import st3 from '../assets/image/st.jpg';
 import ra from '../assets/image/ra.jpg';
 import ra2 from '../assets/image/ra2.jpg';
 import ra3 from '../assets/image/ra3.jpg';
+import es from '../assets/image/es.jpg';
+import es2 from '../assets/image/es2.jpg';
+import es3 from '../assets/image/es3.jpg';
 
 export const sections = [
   {
@@ -632,6 +635,13 @@ export const sections = [
     date: "Ibara ",
     fulld:" ",
     images: [ra,ra2,ra3],
+  },
+  {
+    id: 6,
+    title: "Famly retreat at Ogun golf course and resort center",
+    date: "Okemosan,Abeokuta ",
+    fulld:" ",
+    images: [es,es2,es3],
   },
   
 ];

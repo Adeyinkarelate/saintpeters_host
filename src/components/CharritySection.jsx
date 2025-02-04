@@ -51,7 +51,7 @@ const CharritySection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="text-neutral-900"
+            className="text-neutral-900 text-lg"
           >
             In the area of charity, the society had contributed its little quota
             to the help of the needy and the less privileged members of the
@@ -75,7 +75,7 @@ const CharritySection = () => {
                 </button>
               </form>
               <h3 className="font-bold text-lg">Hello!</h3>
-              <p className="py-4">
+              <p className="py-4 text-lg text-justify">
                 FAMILY CARE – Children’s Party, Presidential Night, Excursions
                 and Easter Picnics
                 <br />
