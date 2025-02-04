@@ -1,27 +1,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Hero from "../components/Hero";
+import { sections } from "../constant";
 
-import bg3 from '../assets/image/bg3.jpg';
-import bg2 from '../assets/image/b2.jpg';
-import bg4 from '../assets/image/adedamola.jpg';
 
-const sections = [
-  {
-    id: 1,
-    title: "HUAWEI FreeBuds Pro 4",
-    date: "January-04-2020",
-    fulld:"Lorem ipsum dolor sit amet consectetur adipiscing elit nulla fames dignissim, in egestas mollis diam fringilla molestie lobortis sed montes, nullam massa iaculis porttitor fermentum libero dapibus tempor lectus. Felis habitasse primis ultrices natoque litora varius sociosqu metus suspendisse ad porttitor purus, eleifend ultricies suscipit venenatis conubia bibendum a pharetra iaculis tellus. Ornare id porta torquent ullamcorper posuere sociosqu morbi varius aliquam litora eget, molestie mus congue suspendisse dignissim mattis porttitor facilisis augue natoque",
-    images: [bg3,bg2,bg4],
-  },
-  {
-    id: 2,
-    title: "Towards an Amazing 2025",
-    date: "January-04-2020",
-    fulld:"Lorem ipsum dolor sit amet consectetur adipiscing elit nulla fames dignissim, in egestas mollis diam fringilla molestie lobortis sed montes, nullam massa iaculis porttitor fermentum libero dapibus tempor lectus. Felis habitasse primis ultrices natoque litora varius sociosqu metus suspendisse ad porttitor purus, eleifend ultricies suscipit venenatis conubia bibendum a pharetra iaculis tellus. Ornare id porta torquent ullamcorper posuere sociosqu morbi varius aliquam litora eget, molestie mus congue suspendisse dignissim mattis porttitor facilisis augue natoque",
-    images: [bg3,bg2,bg4],
-  },
-];
+
+
 
 export default function NewsGrid() {
   const [selected, setSelected] = useState(null);

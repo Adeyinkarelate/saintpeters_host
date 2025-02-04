@@ -87,6 +87,11 @@ import pst7b from "../assets/image/OlutanWf.png";
 import pst7c from "../assets/image/olutan2.png";
 
 
+import pst8 from "../assets/image/opadijo.png";
+
+
+
+
 
 //==========================the event images=================================================
 
@@ -190,13 +195,13 @@ export const clubs = [
 ];
 
 export const members = [
-  { name: "Mr. Femi Kalesanwo", image: pst5, DD: "Nill" },
-  { name: "Mr. Phillip Opadijo", image: pst5, DD: "Nill" },
-  { name: "Mr. JK Diyaolu", image: pst5, DD: "Nill" },
-  { name: "Mr. FI Agu", image: pst5, DD: "Nill" },
-  { name: "Mr. JT Olatunde", image: pst5, DD: "Nill" },
-  { name: "Mr. Martins Osita Anigwe", image: pst5, DD: "Nill" },
-  { name: "Olootu Patrick Olusegun Ogunfolaji", image: m1, DD: "Nill" },
+  { name: "Mr. Femi Kalesanwo", image: pst5,  },
+  { name: "Mr. Phillip Opadijo", image: pst8,},
+  { name: "Mr. JK Diyaolu", image: pst5, },
+  { name: "Mr. FI Agu", image: pst5, },
+  { name: "Mr. JT Olatunde", image: pst5, },
+  { name: "Mr. Martins Osita Anigwe", image: pst5, },
+  { name: "Olootu Patrick Olusegun Ogunfolaji", image: m1, },
 ];
 
 export const current_exco = [
@@ -558,33 +563,72 @@ export const past_member = [
 
 
 // =============================================excurssion=========
+
+import bg33 from '../assets/image/pr3.jpg';
+import bg22 from '../assets/image/pr2.jpg';
+import bg44 from '../assets/image/pr.jpg';
+import bd from '../assets/image/badagry.jpg';
+import bd2 from '../assets/image/badagry2.jpg';
+import bd3 from '../assets/image/badagry3.jpg';
+import ib from '../assets/image/ibadan.jpg';
+import aw from '../assets/image/award.jpg';
+import aw2 from '../assets/image/award2.jpg';
+import ch from '../assets/image/ch.jpg';
+import ch2 from '../assets/image/ch2.jpg';
+import ch3 from '../assets/image/ch3.jpg';
+import st from '../assets/image/st2.jpg';
+import st2 from '../assets/image/st3.jpg';
+import st3 from '../assets/image/st.jpg';
+
 export const sections = [
   {
     id: 1,
-    title: "HUAWEI FreeBuds Pro 4",
-    category: "PRODUCT",
-    description: "Catch the Sound",
-    images: [bg3,bg2],
+    title: "Presidential nite ",
+    date: "December 2021",
+    fulld:"",
+    images: [bg33,bg22,bg44],
   },
   {
     id: 2,
-    title: "Towards an Amazing 2025",
-    category: "YEAR-END VIDEO",
-    description: "Let's cherish every moment we've shared, and with each step, we'll grow stronger",
-    images:[bg3,bg2],
+    title: "Family excursion to UI zoo",
+    date: "",
+    fulld:"",
+    images: [ib],
   },
   {
     id: 3,
-    title: "Building a Robust Data Foundation for Financial Excellence",
-    category: "SUCCESS STORY",
-    description: "KBTG and Huawei: A successful collaboration",
-    images: [bg3,bg2],
+    title: "Family excursion to Badagry",
+    date: "",
+    fulld:" ",
+    images: [bd,bd2,bd3],
   },
   {
     id: 4,
-    title: "Digital CORE Solution",
-    category: "SOLUTION",
-    description: "Reliable, Open, and Professional",
-    images: [bg3,bg2],
+    title: "Productivity Merit award recieved by  ",
+    date: "Dr.Stanley Olu Ola Aikulola",
+    fulld:" ",
+    images: [aw,aw2],
   },
+  {
+    id: 4,
+    title: "Christmas Party, Fun Turf, MKO Abiola Stadium, ",
+    date: "Abeokuta, December 2016.",
+    fulld:" ",
+    images: [ch,ch2,ch3],
+  },
+  {
+    id: 4,
+    title: "St peter feast day celebration",
+    date: "Olomore ",
+    fulld:" ",
+    images: [st,st2,st3],
+  },
+  {
+    id: 5,
+    title: "St peter feast day celebratin",
+    date: "Olomore ",
+    fulld:" ",
+    images: [st,st2,st3],
+  },
+  
 ];
