@@ -568,9 +568,12 @@ import bg33 from '../assets/image/pr3.jpg';
 import bg22 from '../assets/image/pr2.jpg';
 import bg44 from '../assets/image/pr.jpg';
 import bd from '../assets/image/badagry.jpg';
-import bd2 from '../assets/image/badagry2.jpg';
+import ib22 from '../assets/image/ib22.jpg';
 import bd3 from '../assets/image/badagry3.jpg';
-import ib from '../assets/image/ibadan.jpg';
+import bd2 from '../assets/image/badagry2.jpg';
+import ib1 from '../assets/image/ib1.jpg';
+
+import ib3 from '../assets/image/ib3.jpg';
 import aw from '../assets/image/award.jpg';
 import aw2 from '../assets/image/award2.jpg';
 import ch from '../assets/image/ch.jpg';
@@ -585,6 +588,11 @@ import ra3 from '../assets/image/ra3.jpg';
 import es from '../assets/image/es.jpg';
 import es2 from '../assets/image/es2.jpg';
 import es3 from '../assets/image/es3.jpg';
+import eb from '../assets/image/eb.jpg';
+import dan from '../assets/image/dan.jpg';
+import dan2 from '../assets/image/dan2.jpg';
+import dan3 from '../assets/image/dan3.jpg';
+
 
 export const sections = [
   {
@@ -596,10 +604,10 @@ export const sections = [
   },
   {
     id: 2,
-    title: "Family excursion to UI zoo",
+    title: "Family excursion to Ibadan",
     date: "",
     fulld:"",
-    images: [ib],
+    images: [ib1,eb,ib3],
   },
   {
     id: 3,
@@ -642,6 +650,13 @@ export const sections = [
     date: "Okemosan,Abeokuta ",
     fulld:" ",
     images: [es,es2,es3],
+  },
+  {
+    id: 2,
+    title: "Excursion to Idanre/Ikogosi",
+    date: "",
+    fulld:"",
+    images: [dan,dan2,dan3],
   },
   
 ];
