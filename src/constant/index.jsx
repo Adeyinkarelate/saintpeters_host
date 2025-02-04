@@ -9,7 +9,7 @@ import user6b from "../assets/image/fatunbi-b.png";
 import user9 from "../assets/image/ogundipeW.png";
 import user9a from "../assets/image/ogun-1.png";
 import user10 from "../assets/image/fabgenro-1.png";
-import user10a from "../assets/image/fatunbi-b.png";
+import user10c from "../assets/image/fagbenro2.png";
 import user10b from "../assets/image/fagbenro-w.png";
 import user11b from "../assets/image/oyibo-m.png";
 import user11 from "../assets/image/oyinbo.png";
@@ -37,6 +37,7 @@ import user19 from "../assets/image/adigun.png";
 import user19b from "../assets/image/adigun-t.png";
 import user19a from "../assets/image/adigun-w.png";
 import user20 from "../assets/image/aregbesola.png";
+import user14e from "../assets/image/isehww.png";
 
 import user21 from "../assets/image/adegoke-1.png";
 import user21b from "../assets/image/adegoke-2.png";
@@ -59,6 +60,7 @@ import wf5 from "../assets/image/titcom-b.png";
 import wf5b from "../assets/image/titcomWf.png";
 import wf4a from "../assets/image/opara-1.png";
 import wf7 from "../assets/image/rose_mary.png";
+import wf7b from "../assets/image/Olatunji22.png";
 import wf8 from "../assets/image/funmilay.png";
 import wf9 from "../assets/image/mrsaregbesola.png";
 import wf10 from "../assets/image/paul_taiwo.png";
@@ -82,6 +84,7 @@ import pst6 from "../assets/image/olutan.png";
 import pst5 from "../assets/image/default.jpg";
 import pst7 from "../assets/image/olotu.png";
 import pst7b from "../assets/image/OlutanWf.png";
+import pst7c from "../assets/image/olutan2.png";
 
 
 
@@ -255,7 +258,7 @@ export const current_exco = [
     image: user10,
     position: "Social",
     wifeImage1: user10b,
-    wifeImage2: user10a,
+    wifeImage2: user10c,
   },
 
   {
@@ -273,7 +276,7 @@ export const current_exco = [
     name: "Mr. Thomas Babatunde Aregbesola B.Sc,MBA,FCNA,FCTI,FCAI,M.IoD",
     name2: "Mrs. Elizabeth Olufunmilayo Aregbesola",
     image: user20,
-    position: "Active Member",
+    position: "Past President",
     wifeImage1: wf8,
     wifeImage2: wf9,
   },
@@ -284,7 +287,7 @@ export const current_exco = [
     image: pst1,
     position: "Active Member",
     wifeImage1: wf7,
-    wifeImage2: pst5,
+    wifeImage2: wf7b,
   },
   {
     name: "Dr.Stanley Olu Ola Aikulola MNPOM",
@@ -302,6 +305,7 @@ export const current_exco = [
     tiem: "2014 - 2018",
     name2: "Mrs. Mary Ayobami Olutan",
     wifeImage1: pst7b,
+    wifeImage2: pst7c,
   },
 
   {
@@ -344,7 +348,7 @@ export const current_exco = [
     name2: "Mrs. Margaret Emoshiogue Iseh ",
     image: user14,
     position: "Active Member",
-    wifeImage1: user20,
+    wifeImage1: user14e,
     wifeImage2: user14a,
   },
 
