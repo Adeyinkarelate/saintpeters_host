@@ -579,6 +579,9 @@ import ch3 from '../assets/image/ch3.jpg';
 import st from '../assets/image/st2.jpg';
 import st2 from '../assets/image/st3.jpg';
 import st3 from '../assets/image/st.jpg';
+import ra from '../assets/image/ra.jpg';
+import ra2 from '../assets/image/ra2.jpg';
+import ra3 from '../assets/image/ra3.jpg';
 
 export const sections = [
   {
@@ -626,9 +629,9 @@ export const sections = [
   {
     id: 5,
     title: "St peter feast day celebratin",
-    date: "Olomore ",
+    date: "Ibara ",
     fulld:" ",
-    images: [st,st2,st3],
+    images: [ra,ra2,ra3],
   },
   
 ];

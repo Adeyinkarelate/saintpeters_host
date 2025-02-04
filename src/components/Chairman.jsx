@@ -44,7 +44,7 @@ const Chairman = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="mt-4 text-gray-600 text-sm text-justify tracking-wider"
+            className="mt-4 text-gray-600 text-lg text-justify tracking-wider"
           >
             I welcome you to St. Peter Society’s website. This Society has been
             in existence since 1983. It has its roots in St. Anne Catholic
@@ -79,7 +79,7 @@ const Chairman = () => {
                 </button>
               </form>
               <h3 className="font-bold text-lg">Cont..</h3>
-              <p className="py-4 mt-4 text-gray-600 text-sm text-justify tracking-wider">
+              <p className="py-4 mt-4 text-gray-600 text-lg text-justify tracking-wider">
                 We are dedicated Catholics and gentlemen of like minds who came
                 together to promote Christianity within and outside the Catholic
                 Church. We foster cooperation and love among members and our
