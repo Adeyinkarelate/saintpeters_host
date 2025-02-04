@@ -53,7 +53,7 @@ const Objectives = () => {
               key={index}
             >
               <div className="text-5xl ">{item.icon}</div>
-              <p className="text-md p-3 mt-2 tracking-wider ">{item.obj}</p>
+              <p className="text-lg p-3 mt-2 tracking-wider ">{item.obj}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -87,7 +87,7 @@ const Objectives = () => {
                 {clubs.map((c, index) => (
                   <li
                     key={index}
-                    className="py-3 my-3 text-sm tracking-wider text-green-950"
+                    className="py-3 my-3 text-lg tracking-wider text-green-950"
                   >
                     {c.obj}
                   </li>
