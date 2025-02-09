@@ -22,7 +22,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItem.map((item, index) => (
               <li
-                className="py-2 font-medium underline decoration-transparent hover:decoration-orange-600 decoration-[3px] underline-offset-8 transition"
+                className="text-lg py-2 font-medium underline decoration-transparent hover:decoration-orange-600 decoration-[3px] underline-offset-8 transition"
                 key={index}
               >
                 {" "}
@@ -40,7 +40,7 @@ const Navbar = () => {
             </button> */}
             <button
               onClick={() => navigate("event")}
-              className="bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
+              className="text-lg bg-gradient-to-r text-white font-medium from-green-900 to-green-950 px-3 py-2 rounded-md"
             >
               Excursion
             </button>

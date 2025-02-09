@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import bg3 from "/bg3.jpg";
-import bg1 from "/b1.jpg";
-import b2 from "/b2.jpg";
+import use1 from "/public/badagry.jpg"
+import use2 from "/public/badagry2.jpg"
+import use3 from "/public/badagry2.jpg"
+import use4 from "/public/ch2.jpg"
+import use5 from "/public/ch3.jpg"
+import use6 from "/public/st3.jpg"
+import use7 from "/public/st2.jpg"
+import use8 from "/public/ra2.jpg"
+import use9 from "/public/ra3.jpg"
 
-const images = [b2, bg1, bg3];
+const images = [use9,use8,use7,use6,use5,use4,use3,use2,use1];
 
 const CharritySection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

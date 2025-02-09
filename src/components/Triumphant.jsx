@@ -23,7 +23,7 @@ const Triumphant = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1, duration: 0.5 }}
-          className=" text-sm tracking-wider  md:text-center text-justify  "
+          className=" text-lg tracking-wider  md:text-center text-justify  "
         >
           Members Triumphant were members that have died while belonging to the
           society. While alive, these members did a lot to project the image of
